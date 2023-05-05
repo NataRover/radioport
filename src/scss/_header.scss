@@ -1,0 +1,243 @@
+@import "variable";
+
+.opasity-container {
+    // width: 100%;
+    // height: 100%;
+    // background-color: rgba(46, 46, 46, 0.733);
+    // position: absolute;
+    // z-index: 1;
+    // display: none;
+
+    /*боковая панель навигации*/
+    .audiobook-navigation-module {
+        width: 25%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 5%;
+        background-color: $first-bg-color;
+        z-index: 2;
+
+
+        span {
+            color: $text-color-audiobook;
+            font-size: 1.3rem;
+            line-height: 200%;
+            font-weight: lighter;
+        }
+
+        .audiobook-link-menu {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            padding: 5% 10%;
+
+            .logo {
+                border: 2px solid $second-bg-color;
+                border-radius: 3px;
+                text-align: center;
+                margin-bottom: 2vh;
+
+                .logo-up {
+                    font-size: 1.5rem;
+                    color: $second-bg-color;
+                    font-weight: bold;
+                }
+
+                .logo-down {
+                    font-size: 1.5rem;
+                    color: $second-bg-color;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .audiobook-regisr-module {
+            display: flex;
+            flex-direction: column;
+            padding: 1% 10%;
+            margin-bottom: 2vh;
+
+            span {
+                font-weight: lighter;
+            }
+
+            box-shadow: 0 -4px 14px rgba(79, 172, 222, 0.1);
+        }
+    }
+}
+.header {
+    width: 100%;
+    background-color: rgb(135, 160, 168);
+    background-image: url(../img/img_content/podcasty.jpg);
+    background-size: cover;
+
+    /* МЕНЮ НАВИГАЦИЯ*/
+    .header-navigation {
+        width: 100%;
+        @include flex-between;
+        background-color: $first-bg-color;
+        padding: 1% 5%;
+
+        & a {
+            font-size: 1rem;
+
+            :hover {
+                color: $second-bg-color;
+                border-bottom: 1px solid $second-bg-color;
+            }
+
+            span {
+                color: $text-color;
+            }
+        }
+
+        /* БУРГЕР МЕНЮ*/
+        .header-burger-menu {
+            display: none;
+
+            @media screen and (max-width: 991px) {
+                @include flex-center;
+
+                img {
+                    width: 40px;
+                    border-style: none;
+                }
+            }
+        }
+
+        /* ЛОГОТИП*/
+        .logo {
+            color: $second-bg-color;
+            font-size: 3rem;
+
+            span {
+                color: $second-bg-color;
+            }
+
+            :hover {
+                border: none;
+            }
+
+            .logo-down {
+                font-size: 3rem;
+            }
+        }
+
+        .header-link-menu {
+            width: 50%;
+            @include flex-between;
+
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+
+            :first-child :hover {
+                background-color: $second-bg-button-hover;
+                color: $text-color;
+                border-style: none;
+            }
+
+            /* КНОПКА СЛУШАТЬ*/
+            .lesson-btn {
+                padding: 0.9vw;
+                border-radius: 3px;
+                background-color: $text-color ;
+                color: $first-bg-color;
+                font-size: inherit;
+                cursor: pointer;
+            }
+        }
+
+        /* РЕГИСТРАЦИЯ*/
+        .header-in-modul {
+            display: flex;
+            gap: 1vw;
+
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        /* ИКОНКА ПОИСКА*/
+        .header-media-search {
+            display: none;
+
+            @media screen and (max-width: 991px) {
+                @include flex-center;
+            }
+
+            img {
+                width: 40px;
+                border-style: none;
+            }
+        }
+    }
+
+    /* СЛЕНГ ХЕДЕРА*/
+    .header-title {
+        width: 60%;
+        padding: 10% 5%;
+        margin-left: auto;
+        color: $text-color;
+
+        @media screen and (max-width: 991px) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 3rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 3vw;
+
+            /* КНОПКА СЛУШАТЬ*/
+            .lesson-btn-slogan {
+                padding: 12px;
+                border-radius: 3px;
+                background-color: $bg-button ;
+                color: $first-bg-color;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            :hover {
+                background-color: $bg-button-hover;
+                color: $text-color;
+            }
+        }
+    }
+
+}
+
+/* FIXED MENU*/
+.header-navigation-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    padding: 0;
+    transition: all .10s ease;
+    opacity: 0.8;
+    box-shadow: 0px 0px 20px 0px $first-bg-color;
+}
+
+.display-hidden {
+    visibility: hidden;
+}
+
+// .opacity {
+//     opacity: 0.5;
+//     cursor: pointer;
+// }

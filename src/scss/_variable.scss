@@ -1,0 +1,25 @@
+$first-bg-color: #1c203c;
+$second-bg-color: #14b5ab;
+
+$text-color: #ffffff;
+$second-text-color: #459FBF;
+$title-text-color: rgb(79, 67, 145);
+
+$bg-button: #7fcfec;
+$bg-button-hover: #333;
+$second-bg-button-hover: rgb(165, 165, 165);
+
+$text-color-audiobook: #7e808f;
+$bg-audiobook: rgb(241, 242, 243);
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

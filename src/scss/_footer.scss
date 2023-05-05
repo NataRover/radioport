@@ -1,0 +1,45 @@
+@import "variable";
+
+.footer {
+    background-color: $first-bg-color;
+    padding: 3% 5%;
+
+    .futer-modul-logo {
+        color: $text-color;
+        font-size: 1cqi;
+        display: flex;
+        flex-direction: column;
+
+
+        .logo {
+            width: 20%;
+            color: $second-bg-color;
+            font-size: 5cqi;
+            padding-bottom: 1vh;
+        }
+    }
+
+    .footer-link-menu {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        color: $text-color;
+        margin-top: 5vh;
+
+        .modul-listen {
+            line-height: 180%;
+            a{
+                color: $text-color;
+            }
+           
+
+            h4 {
+                font-size: 1.3cqi;
+            }
+
+            & p {
+                font-size: 1cqi;
+            }
+        }
+    }
+}
