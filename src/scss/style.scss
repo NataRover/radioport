@@ -15,7 +15,6 @@
     outline: none;
     text-decoration: none;
     list-style: none;
-
 }
 
 body {
@@ -23,9 +22,11 @@ body {
 
 }
 
+
 ::-webkit-scrollbar {
     width: 8px;
     background-color: transparent;
+    // display: none;
 }
 
 ::-webkit-scrollbar-thumb {
