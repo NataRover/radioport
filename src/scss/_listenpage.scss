@@ -12,11 +12,13 @@
         background: linear-gradient(rgba(202, 196, 133, 0.8), rgb(241, 242, 243));
 
         .listen-logo {
-            width: 250px;
-            height: 250px;
-            background-color: rgb(243, 224, 200);
-            filter: drop-shadow(0 8px 12px rgba(28, 31, 58, .5));
-            border-radius: 15px;
+            .img-wrapper {
+                width: 20vw;
+                height: 20vw;
+                background-color: rgb(243, 224, 200);
+                filter: drop-shadow(0 8px 12px rgba(28, 31, 58, .5));
+                border-radius: 15px;
+            }
         }
 
         .title-buttons-container {

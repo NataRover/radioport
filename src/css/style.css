@@ -1,60 +1,76 @@
 @charset "UTF-8";
-.opasity-container {
+main {
+  position: relative;
+  /* FIXED MENU*/
+}
+main .opasity-container {
   /*боковая панель навигации*/
 }
-.opasity-container .audiobook-navigation-module {
-  width: 25%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 5%;
-  background-color: #1c203c;
-  z-index: 2;
+@media screen and (max-width: 991px) {
+  main .opasity-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+  }
 }
-.opasity-container .audiobook-navigation-module span {
-  color: #7e808f;
-  font-size: 1.3rem;
-  line-height: 200%;
-  font-weight: lighter;
+main .opasity-container .audiobook-navigation-module {
+  display: none;
 }
-.opasity-container .audiobook-navigation-module .audiobook-link-menu {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  padding: 5% 10%;
+@media screen and (max-width: 991px) {
+  main .opasity-container .audiobook-navigation-module {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 5%;
+    background-color: blanchedalmond;
+  }
+  main .opasity-container .audiobook-navigation-module span {
+    color: #7e808f;
+    font-size: 1.3rem;
+    line-height: 200%;
+    font-weight: lighter;
+  }
+  main .opasity-container .audiobook-navigation-module .audiobook-link-menu {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 5% 10%;
+  }
+  main .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo {
+    border: 2px solid #14b5ab;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  main .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
+    font-size: 1.5rem;
+    color: #14b5ab;
+    font-weight: bold;
+  }
+  main .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
+    font-size: 1.5rem;
+    color: #14b5ab;
+    font-weight: bold;
+  }
+  main .opasity-container .audiobook-navigation-module .audiobook-regisr-module {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 10%;
+    margin-bottom: 2vh;
+    box-shadow: 0 -4px 14px rgba(79, 172, 222, 0.1);
+  }
+  main .opasity-container .audiobook-navigation-module .audiobook-regisr-module span {
+    font-weight: lighter;
+  }
 }
-.opasity-container .audiobook-navigation-module .audiobook-link-menu .logo {
-  border: 2px solid #14b5ab;
-  border-radius: 3px;
-  text-align: center;
-  margin-bottom: 2vh;
-}
-.opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
-  font-size: 1.5rem;
-  color: #14b5ab;
-  font-weight: bold;
-}
-.opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
-  font-size: 1.5rem;
-  color: #14b5ab;
-  font-weight: bold;
-}
-.opasity-container .audiobook-navigation-module .audiobook-regisr-module {
-  display: flex;
-  flex-direction: column;
-  padding: 1% 10%;
-  margin-bottom: 2vh;
-  box-shadow: 0 -4px 14px rgba(79, 172, 222, 0.1);
-}
-.opasity-container .audiobook-navigation-module .audiobook-regisr-module span {
-  font-weight: lighter;
-}
-
-.header {
+main .header {
   width: 100%;
   background-color: rgb(135, 160, 168);
   background-image: url(../img/img_content/podcasty.jpg);
@@ -62,7 +78,7 @@
   /* МЕНЮ НАВИГАЦИЯ*/
   /* СЛЕНГ ХЕДЕРА*/
 }
-.header .header-navigation {
+main .header .header-navigation {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -74,44 +90,46 @@
   /* РЕГИСТРАЦИЯ*/
   /* ИКОНКА ПОИСКА*/
 }
-.header .header-navigation a {
+main .header .header-navigation a {
   font-size: 1rem;
 }
-.header .header-navigation a :hover {
+main .header .header-navigation a :hover {
   color: #14b5ab;
   border-bottom: 1px solid #14b5ab;
 }
-.header .header-navigation a span {
+main .header .header-navigation a span {
   color: #ffffff;
 }
-.header .header-navigation .header-burger-menu {
+main .header .header-navigation .header-burger-menu {
   display: none;
 }
 @media screen and (max-width: 991px) {
-  .header .header-navigation .header-burger-menu {
+  main .header .header-navigation .header-burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .header .header-navigation .header-burger-menu img {
+  main .header .header-navigation .header-burger-menu img {
     width: 40px;
     border-style: none;
+    position: absolute;
+    z-index: 1;
   }
 }
-.header .header-navigation .logo {
+main .header .header-navigation .logo {
   color: #14b5ab;
   font-size: 3rem;
 }
-.header .header-navigation .logo span {
+main .header .header-navigation .logo span {
   color: #14b5ab;
 }
-.header .header-navigation .logo :hover {
+main .header .header-navigation .logo :hover {
   border: none;
 }
-.header .header-navigation .logo .logo-down {
+main .header .header-navigation .logo .logo-down {
   font-size: 3rem;
 }
-.header .header-navigation .header-link-menu {
+main .header .header-navigation .header-link-menu {
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -119,16 +137,16 @@
   /* КНОПКА СЛУШАТЬ*/
 }
 @media screen and (max-width: 991px) {
-  .header .header-navigation .header-link-menu {
+  main .header .header-navigation .header-link-menu {
     display: none;
   }
 }
-.header .header-navigation .header-link-menu :first-child :hover {
+main .header .header-navigation .header-link-menu :first-child :hover {
   background-color: rgb(165, 165, 165);
   color: #ffffff;
   border-style: none;
 }
-.header .header-navigation .header-link-menu .lesson-btn {
+main .header .header-navigation .header-link-menu .lesson-btn {
   padding: 0.9vw;
   border-radius: 3px;
   background-color: #ffffff;
@@ -136,55 +154,55 @@
   font-size: inherit;
   cursor: pointer;
 }
-.header .header-navigation .header-in-modul {
+main .header .header-navigation .header-in-modul {
   display: flex;
   gap: 1vw;
 }
 @media screen and (max-width: 991px) {
-  .header .header-navigation .header-in-modul {
+  main .header .header-navigation .header-in-modul {
     display: none;
   }
 }
-.header .header-navigation .header-media-search {
+main .header .header-navigation .header-media-search {
   display: none;
 }
 @media screen and (max-width: 991px) {
-  .header .header-navigation .header-media-search {
+  main .header .header-navigation .header-media-search {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.header .header-navigation .header-media-search img {
+main .header .header-navigation .header-media-search img {
   width: 40px;
   border-style: none;
 }
-.header .header-title {
+main .header .header-title {
   width: 60%;
   padding: 10% 5%;
   margin-left: auto;
   color: #ffffff;
 }
 @media screen and (max-width: 991px) {
-  .header .header-title {
+  main .header .header-title {
     width: 60%;
   }
 }
 @media screen and (max-width: 768px) {
-  .header .header-title {
+  main .header .header-title {
     width: 100%;
     margin: 0 auto;
   }
 }
-.header .header-title p {
+main .header .header-title p {
   font-size: 3rem;
 }
-.header .header-title a {
+main .header .header-title a {
   display: inline-block;
   margin-top: 3vw;
   /* КНОПКА СЛУШАТЬ*/
 }
-.header .header-title a .lesson-btn-slogan {
+main .header .header-title a .lesson-btn-slogan {
   padding: 12px;
   border-radius: 3px;
   background-color: #7fcfec;
@@ -192,13 +210,11 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
-.header .header-title a :hover {
+main .header .header-title a :hover {
   background-color: #333;
   color: #ffffff;
 }
-
-/* FIXED MENU*/
-.header-navigation-fixed {
+main .header-navigation-fixed {
   position: fixed;
   width: 100%;
   top: 0;
@@ -755,9 +771,9 @@
   justify-content: space-between;
   background: linear-gradient(rgba(202, 196, 133, 0.8), rgb(241, 242, 243));
 }
-.content-listen .container-items-wrapper .listen-logo {
-  width: 250px;
-  height: 250px;
+.content-listen .container-items-wrapper .listen-logo .img-wrapper {
+  width: 20vw;
+  height: 20vw;
   background-color: rgb(243, 224, 200);
   filter: drop-shadow(0 8px 12px rgba(28, 31, 58, 0.5));
   border-radius: 15px;

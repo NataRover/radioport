@@ -1,8 +1,7 @@
-import './css/style.css'
-import './scss/style.scss'
+import "./css/style.css";
+import "./scss/style.scss";
 
-
-"use strict";
+("use strict");
 var message = "Hello World";
 console.log(message);
 
@@ -16,21 +15,25 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//BURGER-MENU-SHOW
+//MENU-SHOW
 const activBurgerMenu = document.querySelector(".header-burger-menu");
 const activNav = document.querySelector(".audiobook-navigation-module");
-const opacityBody = document.querySelector(".opasity-container");
+
 activBurgerMenu?.addEventListener("click", function (e) {
   console.log("mmkm");
-  activNav?.classList.remove("display-hidden");
-  opacityBody?.classList.add("opacity");
-  if (e.target !== activBurgerMenu) {
-    activNav?.classList.remove("display-hidden");
-    opacityBody?.classList.add("opacity");
+
+  if (activNav?.classList.contains("display-hidden")) {
+    activNav.classList.remove("display-hidden");
   } else {
     activNav?.classList.add("display-hidden");
-    opacityBody?.classList.remove("opacity");
   }
+});
+
+// MENU-HIDDEN
+const hiddenNav = document.querySelector(".opasity-container");
+hiddenNav?.addEventListener("click", function () {
+  console.log("clickCont");
+  activNav?.classList.add("display-hidden");
 });
 
 // OBSERVER
@@ -100,28 +103,3 @@ for (
     icoPlayGrid[f].classList.remove("visible");
   });
 }
-
-// СКРОЛЛ ОКНА
-// SmoothScroll({
-//   // Время скролла 400 = 0.4 секунды
-//   animationTime: 800,
-//   // Размер шага в пикселях
-//   stepSize: 75,
-//   // Дополнительные настройки:
-//   // Ускорение
-//   accelerationDelta: 30,
-//   // Максимальное ускорение
-//   accelerationMax: 2,
-//   // Поддержка клавиатуры
-//   keyboardSupport: true,
-//   // Шаг скролла стрелками на клавиатуре в пикселях
-//   arrowScroll: 50,
-//   // Pulse (less tweakable)
-//   // ratio of "tail" to "acceleration"
-//   pulseAlgorithm: true,
-//   pulseScale: 4,
-//   pulseNormalize: 1,
-//   // Поддержка тачпада
-//   touchpadSupport: true,
-// });
-
