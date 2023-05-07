@@ -28,11 +28,11 @@ main {
                 top: 0;
                 left: 0;
                 bottom: 5%;
-                background-color: blanchedalmond;
-              
+                background-color: $first-bg-color;
+
 
                 span {
-                    color: $text-color-audiobook;
+                    color: $text-color;
                     font-size: 1.3rem;
                     line-height: 200%;
                     font-weight: lighter;
@@ -113,9 +113,10 @@ main {
 
                 @media screen and (max-width: 991px) {
                     @include flex-center;
+                    padding-left: 3%;
 
                     img {
-                        width: 40px;
+                        width: 6vw;
                         border-style: none;
                         position: absolute;
                         z-index: 1;
@@ -126,7 +127,7 @@ main {
             /* ЛОГОТИП*/
             .logo {
                 color: $second-bg-color;
-                font-size: 3rem;
+                font-size: 5vw;
 
                 span {
                     color: $second-bg-color;
@@ -137,7 +138,7 @@ main {
                 }
 
                 .logo-down {
-                    font-size: 3rem;
+                    font-size: 5vw;
                 }
             }
 
@@ -186,7 +187,7 @@ main {
                 }
 
                 img {
-                    width: 40px;
+                    width: 6vw;
                     border-style: none;
                 }
             }
@@ -249,7 +250,7 @@ main {
 
 .display-hidden {
     display: none;
-    
+
 }
 
 .add-bg {

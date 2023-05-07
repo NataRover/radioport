@@ -9,6 +9,7 @@
         font-size: 1cqi;
         display: flex;
         flex-direction: column;
+
         @media screen and (max-width:768px) {
             font-size: 0.8rem;
         }
@@ -30,15 +31,27 @@
         color: $text-color;
         margin-top: 5vh;
 
+        @media screen and (max-width:768px) {
+            width: 60%;
+            display: grid;
+            margin: 5vh auto;
+            justify-content: space-between;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            row-gap: 10%;
+        }
+
         .modul-listen {
             line-height: 180%;
-            a{
+
+            a {
                 color: $text-color;
             }
-           
+
 
             h4 {
                 font-size: 1.3cqi;
+
                 @media screen and (max-width:768px) {
                     font-size: 1rem;
                 }
