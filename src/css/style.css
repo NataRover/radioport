@@ -910,7 +910,7 @@
 }
 @media screen and (max-width: 991px) {
   .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play {
-    height: 25vw;
+    height: 30vw;
   }
 }
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .img-post-books {
@@ -921,10 +921,26 @@
 }
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .ico-pl-test {
   position: absolute;
-  top: 65%;
+  top: 70%;
   right: 5%;
   width: 40px;
   z-index: 1;
+}
+@media screen and (max-width: 991px) {
+  .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .ico-pl-test {
+    top: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .ico-pl-test {
+    top: 75%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .ico-pl-test {
+    top: 70%;
+    width: 30px;
+  }
 }
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .display-none {
   display: none;

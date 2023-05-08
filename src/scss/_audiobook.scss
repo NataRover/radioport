@@ -131,8 +131,6 @@
 
             @media screen and (max-width: 991px) {
               grid-template-columns: repeat(14, calc(100%/3));
-
-
             }
 
             .carousel-guide-item {
@@ -148,7 +146,7 @@
                 background-color: rgb(204, 230, 230);
 
                 @media screen and (max-width: 991px) {
-                  height: 25vw;
+                  height: 30vw;
                 }
 
                 .img-post-books {
@@ -160,10 +158,22 @@
 
                 .ico-pl-test {
                   position: absolute;
-                  top: 65%;
+                  top: 70%;
                   right: 5%;
                   width: 40px;
                   z-index: 1;
+
+                  @media screen and (max-width: 991px) {
+                    top: 80%;
+                  }
+
+                  @media screen and (max-width: 640px) { 
+                    top: 75%;
+                  }
+                  @media screen and (max-width: 460px) { 
+                    top: 70%;
+                    width: 30px;
+                  }
                 }
 
                 /*play-button-show*/
