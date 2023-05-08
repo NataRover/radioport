@@ -20,15 +20,27 @@ const activBurgerMenu = document.querySelector(".header-burger-menu");
 const activNav = document.querySelector(".audiobook-navigation-module");
 const hiddenNav = document.querySelector(".opasity-container");
 
+//скролл окна исчезает
 function noScroll() {
   let html = document.documentElement;
   html.classList.add("noscroll");
 }
+
+//скролл окна появляется
 function windowScroll() {
   let html = document.documentElement;
   html.classList.remove("noscroll");
 }
 
+//при нажатии на body боковое меню исчезает
+function removeLeftNav() {
+  activNav?.classList.add("display-hidden");
+  activBurgerMenu?.classList.remove("display-hidden");
+  hiddenNav?.classList.remove("add-bg");
+  hiddenNav?.classList.add("display-hidden");
+}
+
+//нажатие на бургер меню,появляется боковое меню
 activBurgerMenu?.addEventListener("click", function (e) {
   console.log("clickBurger");
 
@@ -39,19 +51,13 @@ activBurgerMenu?.addEventListener("click", function (e) {
     hiddenNav?.classList.remove("display-hidden");
     noScroll();
   } else {
-    activNav?.classList.add("display-hidden");
-    activBurgerMenu.classList.remove("display-hidden");
-    hiddenNav?.classList.remove("add-bg");
-    hiddenNav?.classList.add("display-hidden");
+    removeLeftNav();
   }
 });
-// menu hidden
+// боковое меню исчезает при нажатии на body и убирается скролл
 hiddenNav?.addEventListener("click", function () {
-  console.log("clickCont");
-  activNav?.classList.add("display-hidden");
-  activBurgerMenu?.classList.remove("display-hidden");
-  hiddenNav?.classList.remove("add-bg");
-  hiddenNav?.classList.add("display-hidden");
+  console.log("clickBody")
+  removeLeftNav();
   windowScroll();
 });
 

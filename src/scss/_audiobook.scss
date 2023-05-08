@@ -93,9 +93,7 @@
         .btn-carousel-prev,
         .btn-carousel-next {
           position: absolute;
-          display: flex;
-          justify-content: center;
-          align-content: center;
+          @include flex-center;
           border-radius: 50%;
           background: $bg-audiobook;
           cursor: pointer;
@@ -158,22 +156,10 @@
 
                 .ico-pl-test {
                   position: absolute;
-                  top: 70%;
+                  bottom: 5%;
                   right: 5%;
                   width: 40px;
                   z-index: 1;
-
-                  @media screen and (max-width: 991px) {
-                    top: 80%;
-                  }
-
-                  @media screen and (max-width: 640px) { 
-                    top: 75%;
-                  }
-                  @media screen and (max-width: 460px) { 
-                    top: 70%;
-                    width: 30px;
-                  }
                 }
 
                 /*play-button-show*/
