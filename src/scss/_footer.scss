@@ -6,7 +6,7 @@
 
     .futer-modul-logo {
         color: $text-color;
-        font-size: 1cqi;
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
 
@@ -17,8 +17,13 @@
         .logo {
             width: 20%;
             color: $second-bg-color;
-            font-size: 5cqi;
+            font-size: 3.5rem;
             padding-bottom: 1vh;
+        
+            .logo-down {
+                font-size: 3.5rem;
+                
+            }
         }
     }
 
@@ -47,7 +52,7 @@
             }
 
             h4 {
-                font-size: 1.3cqi;
+                font-size: 1rem;
 
                 @media screen and (max-width:768px) {
                     font-size: 1rem;
