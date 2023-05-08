@@ -14,13 +14,11 @@
             font-size: 0.8rem;
         }
 
-
         .logo {
             width: 20%;
             color: $second-bg-color;
             font-size: 5cqi;
             padding-bottom: 1vh;
-
         }
     }
 
@@ -34,7 +32,7 @@
         @media screen and (max-width:768px) {
             width: 60%;
             display: grid;
-            margin: 5vh auto;
+            margin: 5vh 0;
             justify-content: space-between;
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
@@ -47,7 +45,6 @@
             a {
                 color: $text-color;
             }
-
 
             h4 {
                 font-size: 1.3cqi;

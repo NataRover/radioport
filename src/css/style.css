@@ -1,26 +1,22 @@
 @charset "UTF-8";
-main {
-  position: relative;
-  /* FIXED MENU*/
-}
-main .opasity-container {
+.opasity-container {
   /*боковая панель навигации*/
 }
 @media screen and (max-width: 991px) {
-  main .opasity-container {
+  .opasity-container {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
   }
 }
-main .opasity-container .audiobook-navigation-module {
+.opasity-container .audiobook-navigation-module {
   display: none;
 }
 @media screen and (max-width: 991px) {
-  main .opasity-container .audiobook-navigation-module {
-    width: 25%;
+  .opasity-container .audiobook-navigation-module {
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -29,48 +25,66 @@ main .opasity-container .audiobook-navigation-module {
     top: 0;
     left: 0;
     bottom: 5%;
-    background-color: blanchedalmond;
+    background-color: #1c203c;
+    z-index: 3;
   }
-  main .opasity-container .audiobook-navigation-module span {
-    color: #7e808f;
+}
+@media screen and (max-width: 991px) and (max-width: 768px) {
+  .opasity-container .audiobook-navigation-module {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 640px) {
+  .opasity-container .audiobook-navigation-module {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .opasity-container .audiobook-navigation-module span {
+    color: #ffffff;
     font-size: 1.3rem;
     line-height: 200%;
     font-weight: lighter;
   }
-  main .opasity-container .audiobook-navigation-module .audiobook-link-menu {
+}
+@media screen and (max-width: 991px) {
+  .opasity-container .audiobook-navigation-module .audiobook-link-menu {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     padding: 5% 10%;
   }
-  main .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo {
+  .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo {
     border: 2px solid #14b5ab;
     border-radius: 3px;
     text-align: center;
     margin-bottom: 2vh;
   }
-  main .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
+  .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
     font-size: 1.5rem;
     color: #14b5ab;
     font-weight: bold;
   }
-  main .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
+  .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
     font-size: 1.5rem;
     color: #14b5ab;
     font-weight: bold;
   }
-  main .opasity-container .audiobook-navigation-module .audiobook-regisr-module {
+}
+@media screen and (max-width: 991px) {
+  .opasity-container .audiobook-navigation-module .audiobook-regisr-module {
     display: flex;
     flex-direction: column;
     padding: 1% 10%;
     margin-bottom: 2vh;
     box-shadow: 0 -4px 14px rgba(79, 172, 222, 0.1);
   }
-  main .opasity-container .audiobook-navigation-module .audiobook-regisr-module span {
+  .opasity-container .audiobook-navigation-module .audiobook-regisr-module span {
     font-weight: lighter;
   }
 }
-main .header {
+
+.header {
   width: 100%;
   background-color: rgb(135, 160, 168);
   background-image: url(../img/img_content/podcasty.jpg);
@@ -78,58 +92,61 @@ main .header {
   /* МЕНЮ НАВИГАЦИЯ*/
   /* СЛЕНГ ХЕДЕРА*/
 }
-main .header .header-navigation {
+.header .header-navigation {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1c203c;
   padding: 1% 5%;
+  z-index: 1;
   /* БУРГЕР МЕНЮ*/
   /* ЛОГОТИП*/
   /* РЕГИСТРАЦИЯ*/
   /* ИКОНКА ПОИСКА*/
 }
-main .header .header-navigation a {
+.header .header-navigation a {
   font-size: 1rem;
 }
-main .header .header-navigation a :hover {
+.header .header-navigation a :hover {
   color: #14b5ab;
   border-bottom: 1px solid #14b5ab;
 }
-main .header .header-navigation a span {
+.header .header-navigation a span {
   color: #ffffff;
 }
-main .header .header-navigation .header-burger-menu {
+.header .header-navigation .header-burger-menu {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 991px) {
-  main .header .header-navigation .header-burger-menu {
+  .header .header-navigation .header-burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 3%;
   }
-  main .header .header-navigation .header-burger-menu img {
-    width: 40px;
+  .header .header-navigation .header-burger-menu img {
+    width: 6vw;
     border-style: none;
     position: absolute;
     z-index: 1;
   }
 }
-main .header .header-navigation .logo {
+.header .header-navigation .logo {
   color: #14b5ab;
-  font-size: 3rem;
+  font-size: 5vw;
 }
-main .header .header-navigation .logo span {
+.header .header-navigation .logo span {
   color: #14b5ab;
 }
-main .header .header-navigation .logo :hover {
+.header .header-navigation .logo :hover {
   border: none;
 }
-main .header .header-navigation .logo .logo-down {
-  font-size: 3rem;
+.header .header-navigation .logo .logo-down {
+  font-size: 5vw;
 }
-main .header .header-navigation .header-link-menu {
+.header .header-navigation .header-link-menu {
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -137,16 +154,16 @@ main .header .header-navigation .header-link-menu {
   /* КНОПКА СЛУШАТЬ*/
 }
 @media screen and (max-width: 991px) {
-  main .header .header-navigation .header-link-menu {
+  .header .header-navigation .header-link-menu {
     display: none;
   }
 }
-main .header .header-navigation .header-link-menu :first-child :hover {
+.header .header-navigation .header-link-menu :first-child :hover {
   background-color: rgb(165, 165, 165);
   color: #ffffff;
   border-style: none;
 }
-main .header .header-navigation .header-link-menu .lesson-btn {
+.header .header-navigation .header-link-menu .lesson-btn {
   padding: 0.9vw;
   border-radius: 3px;
   background-color: #ffffff;
@@ -154,55 +171,55 @@ main .header .header-navigation .header-link-menu .lesson-btn {
   font-size: inherit;
   cursor: pointer;
 }
-main .header .header-navigation .header-in-modul {
+.header .header-navigation .header-in-modul {
   display: flex;
   gap: 1vw;
 }
 @media screen and (max-width: 991px) {
-  main .header .header-navigation .header-in-modul {
+  .header .header-navigation .header-in-modul {
     display: none;
   }
 }
-main .header .header-navigation .header-media-search {
+.header .header-navigation .header-media-search {
   display: none;
 }
 @media screen and (max-width: 991px) {
-  main .header .header-navigation .header-media-search {
+  .header .header-navigation .header-media-search {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-main .header .header-navigation .header-media-search img {
-  width: 40px;
+.header .header-navigation .header-media-search img {
+  width: 6vw;
   border-style: none;
 }
-main .header .header-title {
+.header .header-title {
   width: 60%;
   padding: 10% 5%;
   margin-left: auto;
   color: #ffffff;
 }
 @media screen and (max-width: 991px) {
-  main .header .header-title {
+  .header .header-title {
     width: 60%;
   }
 }
 @media screen and (max-width: 768px) {
-  main .header .header-title {
+  .header .header-title {
     width: 100%;
     margin: 0 auto;
   }
 }
-main .header .header-title p {
+.header .header-title p {
   font-size: 3rem;
 }
-main .header .header-title a {
+.header .header-title a {
   display: inline-block;
   margin-top: 3vw;
   /* КНОПКА СЛУШАТЬ*/
 }
-main .header .header-title a .lesson-btn-slogan {
+.header .header-title a .lesson-btn-slogan {
   padding: 12px;
   border-radius: 3px;
   background-color: #7fcfec;
@@ -210,23 +227,32 @@ main .header .header-title a .lesson-btn-slogan {
   font-size: 1.5rem;
   cursor: pointer;
 }
-main .header .header-title a :hover {
+.header .header-title a :hover {
   background-color: #333;
   color: #ffffff;
 }
-main .header-navigation-fixed {
+
+/* FIXED MENU*/
+.header-navigation-fixed {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
   padding: 0;
   transition: all 0.1s ease;
-  opacity: 0.8;
+  opacity: 0.9;
   box-shadow: 0px 0px 20px 0px #1c203c;
 }
 
 .display-hidden {
-  visibility: hidden;
+  display: none;
+}
+
+.add-bg {
+  background-color: rgba(46, 46, 46, 0.733);
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 .footer {
@@ -238,6 +264,11 @@ main .header-navigation-fixed {
   font-size: 1cqi;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer .futer-modul-logo {
+    font-size: 0.8rem;
+  }
 }
 .footer .futer-modul-logo .logo {
   width: 20%;
@@ -252,6 +283,17 @@ main .header-navigation-fixed {
   color: #ffffff;
   margin-top: 5vh;
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-link-menu {
+    width: 60%;
+    display: grid;
+    margin: 5vh 0;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 10%;
+  }
+}
 .footer .footer-link-menu .modul-listen {
   line-height: 180%;
 }
@@ -261,13 +303,20 @@ main .header-navigation-fixed {
 .footer .footer-link-menu .modul-listen h4 {
   font-size: 1.3cqi;
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-link-menu .modul-listen h4 {
+    font-size: 1rem;
+  }
+}
 .footer .footer-link-menu .modul-listen p {
-  font-size: 1cqi;
+  font-size: 0.8rem;
 }
 
 .content-container {
   width: 100%;
   padding: 0 5% 10% 5%;
+  position: relative;
+  z-index: 0;
 }
 .content-container .sub-title a {
   display: flex;
@@ -280,7 +329,7 @@ main .header-navigation-fixed {
   padding: 0.8% 2%;
   border-radius: 3px;
   color: #ffffff;
-  font-size: 2cqi;
+  font-size: 1.5rem;
   background-color: #1c203c;
 }
 .content-container .sub-title a span:hover {
@@ -316,7 +365,7 @@ main .header-navigation-fixed {
 .content-container .sub-title {
   margin-top: 5%;
   text-align: center;
-  font-size: 2.5cqi;
+  font-size: 1.5rem;
   color: #1c203c;
 }
 .content-container .sub-title span {
@@ -335,6 +384,38 @@ main .header-navigation-fixed {
 .content-container .box-scroll-module .left-parallax-module {
   width: 55%;
 }
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module {
+    width: 100%;
+  }
+}
+.content-container .box-scroll-module .left-parallax-module .left-title {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module .left-title {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .content-container .box-scroll-module .left-parallax-module .left-title .left-title-title {
+    display: inline-block;
+    margin-bottom: 3vh;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1c203c;
+  }
+  .content-container .box-scroll-module .left-parallax-module .left-title .left-title-subtitle {
+    display: inline-block;
+    margin-bottom: 3vh;
+  }
+  .content-container .box-scroll-module .left-parallax-module .left-title .left-title-btn-listen span {
+    background-color: #459FBF;
+    padding: 1% 3%;
+    margin-top: 2%;
+    border-radius: 2%;
+    color: #ffffff;
+  }
+}
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img {
   display: grid;
   justify-content: start;
@@ -344,6 +425,11 @@ main .header-navigation-fixed {
   gap: 2%;
   margin-bottom: 20%;
 }
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img {
+    margin-bottom: 7%;
+  }
+}
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio {
   position: relative;
   cursor: pointer;
@@ -351,6 +437,11 @@ main .header-navigation-fixed {
   -moz-box-shadow: -5px -5px 5px -5px #1c203c;
   box-shadow: -5px -5px 5px -5px #1c203c;
   border-radius: 3px;
+}
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio {
+    margin-top: 15%;
+  }
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio img {
   display: block;
@@ -363,29 +454,52 @@ main .header-navigation-fixed {
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio .ico-play {
   bottom: 5%;
   right: 5%;
-  width: 3vw;
-  height: 3vw;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   position: absolute;
   cursor: pointer;
+}
+.content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(1) img {
+  height: 80%;
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(2) {
   align-self: self-end;
   width: 15vw;
   height: 15vw;
 }
-.content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(1) img {
-  height: 80%;
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(2) {
+    width: 35vw;
+    height: 35vw;
+  }
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(3) {
   align-self: self-start;
   width: 25vw;
   height: 20vw;
 }
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(3) {
+    width: 50vw;
+    height: 40vw;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(4) {
+    margin: 0;
+  }
+}
 .content-container .box-scroll-module .right-parallax-module {
   position: relative;
   min-height: 50vw;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .content-container .box-scroll-module .right-parallax-module {
+    display: none;
+  }
 }
 .content-container .box-scroll-module .right-parallax-module .right-modul-text {
   position: -webkit-sticky;
@@ -441,6 +555,11 @@ main .header-navigation-fixed {
   justify-content: space-between;
   gap: 5%;
 }
+@media screen and (max-width: 768px) {
+  .content-container .module-blok-bg-text {
+    flex-direction: column;
+  }
+}
 .content-container .module-blok-bg-text .modul-block-bg img {
   width: 45vw;
   max-height: 50vh;
@@ -451,10 +570,21 @@ main .header-navigation-fixed {
   box-shadow: -5px -5px 5px -5px #1c203c;
   border-radius: 3px;
 }
+@media screen and (max-width: 768px) {
+  .content-container .module-blok-bg-text .modul-block-bg img {
+    width: 100%;
+  }
+}
 .content-container .module-blok-bg-text .modul-block-text {
   color: #333;
   line-height: 200%;
   font-size: 1.5cqi;
+}
+@media screen and (max-width: 768px) {
+  .content-container .module-blok-bg-text .modul-block-text {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
 }
 .content-container .module-blok-bg-text .modul-block-text :nth-child(1) {
   color: #1c203c;
@@ -462,11 +592,21 @@ main .header-navigation-fixed {
   font-weight: bold;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .content-container .module-blok-bg-text .modul-block-text :nth-child(1) {
+    font-size: 1.5rem;
+  }
+}
 .content-container .module-blok-bg-text .modul-block-text :nth-child(2) {
   color: #459FBF;
   font-size: 3cqi;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .content-container .module-blok-bg-text .modul-block-text :nth-child(2) {
+    font-size: 1.5rem;
+  }
 }
 .content-container .module-blok-bg-text .modul-block-text :nth-child(3) {
   margin-top: 5%;
@@ -484,17 +624,33 @@ main .header-navigation-fixed {
   line-height: 200%;
   font-size: 1.5cqi;
 }
+@media screen and (max-width: 768px) {
+  .content-container .modul-block-text-other {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
+}
 .content-container .modul-block-text-other :nth-child(1) {
   color: #1c203c;
   font-size: 3cqi;
   font-weight: bold;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .content-container .modul-block-text-other :nth-child(1) {
+    font-size: 1.5rem;
+  }
+}
 .content-container .modul-block-text-other :nth-child(2) {
   color: #14b5ab;
   font-size: 3cqi;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .content-container .modul-block-text-other :nth-child(2) {
+    font-size: 1.5rem;
+  }
 }
 .content-container .modul-block-text-other :nth-child(3) {
   margin-top: 1%;
@@ -513,6 +669,11 @@ main .header-navigation-fixed {
   grid-template-columns: repeat(4, 11vw);
   grid-template-rows: repeat(4, 11vw);
 }
+@media screen and (max-width: 768px) {
+  .module-grid .grid-content .left-grid {
+    display: none;
+  }
+}
 .module-grid .grid-content .left-grid :nth-child(5) {
   grid-column: span 2;
   padding: 2%;
@@ -525,6 +686,12 @@ main .header-navigation-fixed {
   display: grid;
   grid-template-columns: repeat(4, 11vw);
   grid-template-rows: repeat(4, 11vw);
+}
+@media screen and (max-width: 768px) {
+  .module-grid .grid-content .right-grid {
+    grid-template-columns: repeat(4, 22vw);
+    grid-template-rows: repeat(4, 22vw);
+  }
 }
 .module-grid .grid-content .right-grid :nth-child(5) {
   grid-column: span 2;
@@ -541,6 +708,11 @@ main .header-navigation-fixed {
   object-fit: cover;
   border-radius: 3px;
 }
+@media screen and (max-width: 768px) {
+  .module-grid .grid-content .wrapper-grid-img {
+    padding: 2%;
+  }
+}
 .module-grid .grid-content .wrapper-grid-img img {
   width: 100%;
   max-height: 100%;
@@ -551,8 +723,8 @@ main .header-navigation-fixed {
 .module-grid .grid-content .wrapper-grid-img .ico-play-grid {
   bottom: 10%;
   right: 10%;
-  width: 3vw;
-  height: 3vw;
+  width: 40px;
+  height: 40px;
   position: absolute;
   cursor: pointer;
 }
@@ -562,6 +734,13 @@ main .header-navigation-fixed {
   text-align: center;
   font-size: 2cqi;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .module-grid .sub-module-btn {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .module-grid .sub-module-btn p {
   padding-bottom: 2%;
@@ -576,7 +755,7 @@ main .header-navigation-fixed {
   cursor: pointer;
   border-radius: 3px;
   color: #333;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #ffffff;
 }
 .module-grid .sub-module-btn a span:hover {
@@ -613,6 +792,11 @@ main .header-navigation-fixed {
   top: 1%;
   left: 0;
   bottom: 5%;
+}
+@media screen and (max-width: 991px) {
+  .audiobook-container .audiobook-navigation-module {
+    display: none;
+  }
 }
 .audiobook-container .audiobook-navigation-module span {
   color: #7e808f;
@@ -655,6 +839,11 @@ main .header-navigation-fixed {
 }
 .audiobook-container .audiobook-content {
   width: 80%;
+}
+@media screen and (max-width: 991px) {
+  .audiobook-container .audiobook-content {
+    width: 100%;
+  }
 }
 .audiobook-container .audiobook-content .classic-audio-file {
   padding: 3% 5%;
@@ -699,8 +888,12 @@ main .header-navigation-fixed {
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content {
   display: grid;
   grid-template-columns: repeat(14, 16.6666666667%);
-  grid-gap: 2%;
-  padding: 1%;
+  gap: 2%;
+}
+@media screen and (max-width: 991px) {
+  .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content {
+    grid-template-columns: repeat(14, 33.3333333333%);
+  }
 }
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item {
   cursor: pointer;
@@ -708,20 +901,29 @@ main .header-navigation-fixed {
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play {
   display: block;
   position: relative;
-  background-color: white;
+  height: 12vw;
   overflow: hidden;
   border-radius: 15px;
-  width: 100%;
-  height: 12vw;
   box-shadow: rgba(28, 31, 58, 0.12) 0px 3px 4px 1px;
   background-color: rgb(204, 230, 230);
   /*play-button-show*/
 }
+@media screen and (max-width: 991px) {
+  .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play {
+    height: 25vw;
+  }
+}
+.audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .img-post-books {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .ico-pl-test {
   position: absolute;
-  top: 70%;
+  top: 65%;
   right: 5%;
-  width: 3vw;
+  width: 40px;
   z-index: 1;
 }
 .audiobook-container .audiobook-content .classic-audio-file .gallery-module-carousel #carousel #content .carousel-guide-item .wrapper-book-file-img-play .display-none {
@@ -763,6 +965,11 @@ main .header-navigation-fixed {
 .content-listen {
   width: 80%;
 }
+@media screen and (max-width: 991px) {
+  .content-listen {
+    width: 100%;
+  }
+}
 .content-listen .container-items-wrapper {
   padding: 3% 5%;
   width: 100%;
@@ -771,6 +978,11 @@ main .header-navigation-fixed {
   justify-content: space-between;
   background: linear-gradient(rgba(202, 196, 133, 0.8), rgb(241, 242, 243));
 }
+@media screen and (max-width: 768px) {
+  .content-listen .container-items-wrapper {
+    flex-direction: column;
+  }
+}
 .content-listen .container-items-wrapper .listen-logo .img-wrapper {
   width: 20vw;
   height: 20vw;
@@ -778,10 +990,22 @@ main .header-navigation-fixed {
   filter: drop-shadow(0 8px 12px rgba(28, 31, 58, 0.5));
   border-radius: 15px;
 }
+@media screen and (max-width: 768px) {
+  .content-listen .container-items-wrapper .listen-logo .img-wrapper {
+    width: 45vw;
+    height: 40vw;
+    margin-bottom: 3vh;
+  }
+}
 .content-listen .container-items-wrapper .title-buttons-container {
   width: 70%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 640px) {
+  .content-listen .container-items-wrapper .title-buttons-container {
+    width: 100%;
+  }
 }
 .content-listen .container-items-wrapper .title-buttons-container .title-container h1 {
   font-size: 3rem;
@@ -797,9 +1021,11 @@ main .header-navigation-fixed {
 }
 .content-listen .container-items-wrapper .title-buttons-container .button-container .play-icon-listen {
   width: 50px;
+  cursor: pointer;
 }
 .content-listen .container-items-wrapper .title-buttons-container .button-container .favorite-icon-module {
   width: 30px;
+  cursor: pointer;
 }
 
 * {

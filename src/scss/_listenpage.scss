@@ -3,6 +3,10 @@
 .content-listen {
     width: 80%;
 
+    @media screen and (max-width: 991px) {
+        width: 100%;
+    }
+
     .container-items-wrapper {
         padding: 3% 5%;
         width: 100%;
@@ -11,6 +15,11 @@
         justify-content: space-between;
         background: linear-gradient(rgba(202, 196, 133, 0.8), rgb(241, 242, 243));
 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+
         .listen-logo {
             .img-wrapper {
                 width: 20vw;
@@ -18,6 +27,14 @@
                 background-color: rgb(243, 224, 200);
                 filter: drop-shadow(0 8px 12px rgba(28, 31, 58, .5));
                 border-radius: 15px;
+
+                @media screen and (max-width: 768px) {
+                    width: 45vw;
+                    height: 40vw;
+                    margin-bottom: 3vh;
+
+                }
+
             }
         }
 
@@ -25,6 +42,10 @@
             width: 70%;
             display: flex;
             flex-direction: column;
+            @media screen and (max-width: 640px) {
+                width: 100%;
+
+            }
 
             .title-container {
                 h1 {
@@ -44,10 +65,12 @@
 
                 .play-icon-listen {
                     width: 50px;
+                    cursor: pointer;
                 }
 
                 .favorite-icon-module {
                     width: 30px;
+                    cursor: pointer;
                 }
             }
         }
