@@ -99,7 +99,7 @@
         width: 100%;
         @include flex-between;
         background-color: $first-bg-color;
-        padding: 1% 5%;
+        padding: 0 5%;
         z-index: 1;
 
         & a {
@@ -136,7 +136,6 @@
         /* ЛОГОТИП*/
         .logo {
             color: $second-bg-color;
-            font-size: 5vw;
 
             span {
                 color: $second-bg-color;
@@ -146,9 +145,18 @@
                 border: none;
             }
 
-            .logo-down {
-                font-size: 5vw;
+            .logo-down,
+            .logo-up {
+                font-size: 3rem;
+
+                @media screen and (max-width: 640px) {
+                    font-size: 2.5rem;
+                }
             }
+
+
+
+
         }
 
         .header-link-menu {
