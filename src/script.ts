@@ -1,9 +1,9 @@
 import "./css/style.css";
 import "./scss/style.scss";
 
-("use strict");
-var message = "Hello World";
-console.log(message);
+// ("use strict");
+// var message = "Hello World";
+// console.log(message);
 
 //FIXED MENU
 window.addEventListener("scroll", function () {
@@ -80,8 +80,7 @@ const observer = new IntersectionObserver(
         });
         titlePDrop.forEach((el) => {
           if (
-            el.id ==
-            document
+            el.id == document
               .querySelector("a.active")
               ?.getAttribute("href")
               ?.replace("#", "")

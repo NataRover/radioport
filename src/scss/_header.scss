@@ -32,6 +32,7 @@
             @media screen and (max-width:768px) {
                 width: 40%;
             }
+
             @media screen and (max-width:640px) {
                 width: 50%;
             }
@@ -168,7 +169,7 @@
             .lesson-btn {
                 padding: 0.9vw;
                 border-radius: 3px;
-                background-color: $text-color ;
+                background-color: $text-color;
                 color: $first-bg-color;
                 font-size: inherit;
                 cursor: pointer;
@@ -229,7 +230,7 @@
             .lesson-btn-slogan {
                 padding: 12px;
                 border-radius: 3px;
-                background-color: $bg-button ;
+                background-color: $bg-button;
                 color: $first-bg-color;
                 font-size: 1.5rem;
                 cursor: pointer;
