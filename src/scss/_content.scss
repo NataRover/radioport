@@ -320,56 +320,10 @@
                 @media screen and (max-width:768px) {
                     font-size: 1.5rem;
                 }
-
-                :nth-child(2) {
-                    color: $second-text-color;
-                    font-size: 3cqi;
-                    font-weight: bold;
-                    text-transform: uppercase;
-
-                    @media screen and (max-width:768px) {
-                        font-size: 1.5rem;
-                    }
-                }
-
-                :nth-child(3) {
-                    margin-top: 5%;
-                    line-height: 140%;
-                }
-            }
-        }
-
-        hr {
-            margin: 5% 0;
-            padding: 0;
-            height: 1vh;
-            border: none;
-            background: linear-gradient(45deg, $bg-button-hover, $second-bg-color);
-        }
-
-        .modul-block-text-other {
-            color: $bg-button-hover;
-            line-height: 200%;
-            font-size: 1.5cqi;
-
-            @media screen and (max-width:768px) {
-                font-size: 1.5rem;
-                line-height: 140%;
-            }
-
-            :nth-child(1) {
-                color: $first-bg-color;
-                font-size: 3cqi;
-                font-weight: bold;
-                text-transform: uppercase;
-
-                @media screen and (max-width:768px) {
-                    font-size: 1.5rem;
-                }
             }
 
             :nth-child(2) {
-                color: $second-bg-color;
+                color: $second-text-color;
                 font-size: 3cqi;
                 font-weight: bold;
                 text-transform: uppercase;
@@ -380,20 +334,68 @@
             }
 
             :nth-child(3) {
-                margin-top: 1%;
+                margin-top: 5%;
                 line-height: 140%;
             }
         }
-    } 
+    }
+
+    hr {
+        margin: 5% 0;
+        padding: 0;
+        height: 1vh;
+        border: none;
+        background: linear-gradient(45deg, $bg-button-hover, $second-bg-color);
+    }
+
+    .modul-block-text-other {
+        color: $bg-button-hover;
+        line-height: 200%;
+        font-size: 1.5cqi;
+
+        @media screen and (max-width:768px) {
+            font-size: 1.5rem;
+            line-height: 140%;
+        }
+
+        :nth-child(1) {
+            color: $first-bg-color;
+            font-size: 3cqi;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            @media screen and (max-width:768px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        :nth-child(2) {
+            color: $second-bg-color;
+            font-size: 3cqi;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            @media screen and (max-width:768px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        :nth-child(3) {
+            margin-top: 1%;
+            line-height: 140%;
+        }
+    }
 }
-  //CONTENT-GRID-BLOCK
-  .module-grid {
+
+
+//CONTENT-GRID-BLOCK
+.module-grid {
     background: linear-gradient(180deg, $text-color 10%, $first-bg-color 0, $bg-button 100%);
 
     .grid-content {
         display: flex;
         justify-content: center;
-        
+
         .left-grid {
             display: grid;
             grid-template-columns: repeat(4, 11vw);
@@ -505,6 +507,7 @@
         }
     }
 }
+
 //кнопки play на левом блоке картинок контента
 .hidden {
     visibility: hidden;
