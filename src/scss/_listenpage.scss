@@ -1,5 +1,35 @@
 @import "variable";
 
+.opasity-container {
+    .audiobook-navigation-module-change-bg {
+        background-color: $bg-audiobook;
+
+        .audiobook-link-menu,
+        .audiobook-regisr-module {
+            box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
+
+            a {
+                span {
+                    color: $second-bg-button-hover;
+                }
+            }
+        }
+    }
+}
+
+.header-audiobook {
+    border-bottom: 1px solid $text-color-audiobook;
+    display: none;
+
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+
+    .header-navigation {
+        background-color: $bg-audiobook;
+    }
+}
+
 .content-listen {
     width: 80%;
 
@@ -11,15 +41,16 @@
         padding: 3% 5%;
         width: 100%;
         gap: 3%;
-        @include flex-center;
+        @include flex-between;
         background: linear-gradient(rgba(254, 192, 76, 0.8), rgb(241, 242, 243));
 
         @media screen and (max-width: 768px) {
-           
+
             flex-direction: column;
         }
 
         .listen-logo {
+
             .img-wrapper {
                 width: 20vw;
                 height: 20vw;
@@ -62,9 +93,10 @@
                 p {
                     margin-bottom: 2vw;
                 }
+
                 @media screen and (max-width:768px) {
                     width: 100%;
-                   text-align: center;
+                    text-align: center;
                 }
             }
 
@@ -84,5 +116,27 @@
                 }
             }
         }
+    }
+
+    .info-button-module {
+        padding: 0 5%;
+
+        .info {
+            cursor: pointer;
+            @include flex-center;
+            gap: 5px;
+        }
+    }
+
+    hr {
+        margin: 5% 0;
+        padding: 0;
+        height: 1vh;
+        border: none;
+        background: linear-gradient(45deg, $bg-button-hover, $second-bg-color);
+    }
+
+    .content-listen-episode {
+        padding: 0 5%;
     }
 }
