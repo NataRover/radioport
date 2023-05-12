@@ -54,7 +54,6 @@
             background-color: rgb(165 165 165 / 50%);
             color: $first-bg-color;
             font-size: 1rem;
-
         }
     }
 
@@ -70,7 +69,6 @@
             margin-top: 2%;
             border-radius: 2%;
             color: $text-color;
-
         }
     }
 
@@ -93,7 +91,6 @@
                 @media screen and (max-width:768px) {
                     display: block;
                     font-size: 1.5rem;
-
 
                     .left-title-title {
                         display: inline-block;
@@ -392,12 +389,9 @@
     //CONTENT-GRID-BLOCK
     .module-grid {
         background: linear-gradient(180deg, $text-color 10%, $first-bg-color 0, $bg-button 100%);
-
-
         .grid-content {
             display: flex;
             justify-content: center;
-
             .left-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 11vw);

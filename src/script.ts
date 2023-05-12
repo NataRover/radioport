@@ -37,7 +37,7 @@ function removeLeftNav() {
 }
 
 //нажатие на бургер меню,появляется боковое меню
-activBurgerMenu?.addEventListener("click", function (e) {
+activBurgerMenu?.addEventListener("click", function () {
   console.log("clickBurger");
 
   if (activNav?.classList.contains("display-hidden")) {
