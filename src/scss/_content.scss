@@ -384,127 +384,127 @@
                 line-height: 140%;
             }
         }
-    }
+    } 
+}
+  //CONTENT-GRID-BLOCK
+  .module-grid {
+    background: linear-gradient(180deg, $text-color 10%, $first-bg-color 0, $bg-button 100%);
 
-    //CONTENT-GRID-BLOCK
-    .module-grid {
-        background: linear-gradient(180deg, $text-color 10%, $first-bg-color 0, $bg-button 100%);
-        .grid-content {
-            display: flex;
-            justify-content: center;
-            .left-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 11vw);
-                grid-template-rows: repeat(4, 11vw);
+    .grid-content {
+        display: flex;
+        justify-content: center;
+        
+        .left-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 11vw);
+            grid-template-rows: repeat(4, 11vw);
 
-                @media screen and (max-width:768px) {
-                    display: none;
-                }
-
-                :nth-child(5) {
-                    grid-column: span 2;
-                    padding: 2%;
-                }
-
-                :nth-child(6) {
-                    grid-column: span 2;
-                    padding: 2%;
-                }
+            @media screen and (max-width:768px) {
+                display: none;
             }
 
-            .right-grid {
-
-                display: grid;
-                grid-template-columns: repeat(4, 11vw);
-                grid-template-rows: repeat(4, 11vw);
-
-                @media screen and (max-width:768px) {
-                    grid-template-columns: repeat(4, 22vw);
-                    grid-template-rows: repeat(4, 22vw);
-                }
-
-                :nth-child(5) {
-                    grid-column: span 2;
-                    padding: 2%;
-                }
-
-                :nth-child(6) {
-                    grid-column: span 2;
-                    padding: 2%;
-                }
+            :nth-child(5) {
+                grid-column: span 2;
+                padding: 2%;
             }
 
-            .wrapper-grid-img {
-                padding: 5%;
-                cursor: pointer;
-                position: relative;
-                object-fit: cover;
-                border-radius: 3px;
-
-                @media screen and (max-width:768px) {
-                    padding: 2%;
-                }
-
-                & img {
-                    width: 100%;
-                    max-height: 100%;
-                    object-fit: cover;
-                    border-radius: 3px;
-                    display: block;
-                }
-
-                .ico-play-grid {
-                    bottom: 10%;
-                    right: 10%;
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    cursor: pointer;
-                }
+            :nth-child(6) {
+                grid-column: span 2;
+                padding: 2%;
             }
         }
 
-        .sub-module-btn {
-            margin-top: 5%;
-            padding-bottom: 5%;
-            text-align: center;
-            font-size: 2cqi;
-            color: $text-color;
+        .right-grid {
+
+            display: grid;
+            grid-template-columns: repeat(4, 11vw);
+            grid-template-rows: repeat(4, 11vw);
 
             @media screen and (max-width:768px) {
+                grid-template-columns: repeat(4, 22vw);
+                grid-template-rows: repeat(4, 22vw);
+            }
+
+            :nth-child(5) {
+                grid-column: span 2;
+                padding: 2%;
+            }
+
+            :nth-child(6) {
+                grid-column: span 2;
+                padding: 2%;
+            }
+        }
+
+        .wrapper-grid-img {
+            padding: 5%;
+            cursor: pointer;
+            position: relative;
+            object-fit: cover;
+            border-radius: 3px;
+
+            @media screen and (max-width:768px) {
+                padding: 2%;
+            }
+
+            & img {
+                width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                border-radius: 3px;
+                display: block;
+            }
+
+            .ico-play-grid {
+                bottom: 10%;
+                right: 10%;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .sub-module-btn {
+        margin-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 2cqi;
+        color: $text-color;
+
+        @media screen and (max-width:768px) {
+            font-size: 1.5rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p {
+            padding-bottom: 2%;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+
+            span {
+                padding: 0.8% 2%;
+                border-radius: 3px;
+                cursor: pointer;
+                border-radius: 3px;
+                color: $bg-button-hover;
                 font-size: 1.5rem;
-                width: 80%;
-                margin: 0 auto;
-            }
+                background-color: $text-color;
 
-            p {
-                padding-bottom: 2%;
-            }
-
-            a {
-                display: flex;
-                justify-content: center;
-
-                span {
-                    padding: 0.8% 2%;
-                    border-radius: 3px;
-                    cursor: pointer;
-                    border-radius: 3px;
-                    color: $bg-button-hover;
-                    font-size: 1.5rem;
-                    background-color: $text-color;
-
-                    &:hover {
-                        background-color: $second-bg-button-hover;
-                        color: $text-color;
-                        border-style: none;
-                    }
+                &:hover {
+                    background-color: $second-bg-button-hover;
+                    color: $text-color;
+                    border-style: none;
                 }
             }
         }
     }
 }
-
 //кнопки play на левом блоке картинок контента
 .hidden {
     visibility: hidden;
