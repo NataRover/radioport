@@ -1,10 +1,6 @@
 import "./css/style.css";
 import "./scss/style.scss";
 
-// ("use strict");
-// var message = "Hello World";
-// console.log(message);
-
 //FIXED MENU
 window.addEventListener("scroll", function () {
   let fixedMenu = document.querySelector(".header-navigation");

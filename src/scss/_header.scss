@@ -145,24 +145,19 @@
                 border: none;
             }
 
-            .logo-down,
-            .logo-up {
+            .logo-up,
+            .logo-down {
                 font-size: 3rem;
 
                 @media screen and (max-width: 640px) {
                     font-size: 2.5rem;
                 }
             }
-
-
-
-
         }
 
         .header-link-menu {
             width: 50%;
             @include flex-between;
-
             @media screen and (max-width: 991px) {
                 display: none;
             }
@@ -250,7 +245,6 @@
             }
         }
     }
-
 }
 
 /* FIXED MENU*/
@@ -264,16 +258,12 @@
     box-shadow: 0px 0px 20px 0px $first-bg-color;
 }
 
-
 .display-hidden {
     display: none;
-
 }
-
 .add-bg {
     background-color: rgba(46, 46, 46, 0.733);
 }
-
 .noscroll {
     overflow: hidden;
 }

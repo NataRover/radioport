@@ -93,23 +93,22 @@
         .btn-carousel-prev,
         .btn-carousel-next {
           position: absolute;
+          z-index: 2;
+          top: 40%;
           @include flex-center;
           border-radius: 50%;
+          transform: translate(0, -50%);
           background: $bg-audiobook;
           cursor: pointer;
         }
 
         .btn-carousel-prev {
-          top: 40%;
-          left: -3%;
-          transform: translate(0, -50%);
+          left: -1%;
           display: none;
         }
 
         .btn-carousel-next {
-          top: 40%;
-          right: -3%;
-          transform: translate(0, -50%);
+          right: -1%; 
         }
 
         #carousel {
