@@ -1,7 +1,5 @@
 @import "variable";
 
-
-
 .opasity-container {
     @media screen and (max-width: 991px) {
         width: 100%;
@@ -36,7 +34,6 @@
             @media screen and (max-width:640px) {
                 width: 50%;
             }
-
 
             span {
                 color: $text-color;
@@ -158,6 +155,7 @@
         .header-link-menu {
             width: 50%;
             @include flex-between;
+
             @media screen and (max-width: 991px) {
                 display: none;
             }
@@ -172,11 +170,10 @@
             .lesson-btn {
                 padding: 0.9vw;
                 border-radius: 3px;
-                background-color: $text-color;
+                background-color: $bg-button;
                 color: $first-bg-color;
                 font-size: inherit;
                 cursor: pointer;
-
             }
         }
 
@@ -256,14 +253,17 @@
     transition: all .10s ease;
     opacity: 0.9;
     box-shadow: 0px 0px 20px 0px $first-bg-color;
+    transition: top .4s ease-in;
 }
 
 .display-hidden {
     display: none;
 }
+
 .add-bg {
     background-color: rgba(46, 46, 46, 0.733);
 }
+
 .noscroll {
     overflow: hidden;
 }

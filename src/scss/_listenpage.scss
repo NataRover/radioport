@@ -125,6 +125,17 @@
             cursor: pointer;
             @include flex-center;
             gap: 5px;
+
+            :last-child {
+                width: 10px;
+                height: 10px;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
         }
     }
 
@@ -138,5 +149,52 @@
 
     .content-listen-episode {
         padding: 0 5%;
+        margin-bottom: 5vh;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .apizod-module {
+            margin-top: 3vh;
+            display: flex;
+            gap: 3vw;
+
+            .audiobook-apizode-module-player {
+                width: 40px;
+                cursor: pointer;
+            }
+
+            .about-audiobook-apizode-module-player {
+                font-size: 0.8rem;
+                line-height: 180%;
+                letter-spacing: 1px;
+
+                :first-child {
+                    color: $first-bg-color;
+                }
+
+                :nth-child(2) {
+                    color: $text-color-audiobook;
+                }
+
+                .about-audiobook-apizode-module-player-drop {
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    cursor: pointer;
+
+                    p {
+                        color: $first-bg-color;
+                        font-weight: bold;
+                    }
+
+                    img {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
     }
 }

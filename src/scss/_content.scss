@@ -140,6 +140,12 @@
                     box-shadow: -5px -5px 5px -5px $first-bg-color;
                     border-radius: 3px;
 
+                    :first-child:hover {
+                        // opacity: 0.5;
+                        filter: brightness(0.5);
+                        transition: transform .5s;
+                    }
+
                     @media screen and (max-width:768px) {
                         margin-top: 15%;
                     }
@@ -228,6 +234,7 @@
 
                     .active {
                         color: $first-bg-color;
+                        transition: transform .10s;
                     }
                 }
             }
@@ -494,9 +501,9 @@
                 border-radius: 3px;
                 cursor: pointer;
                 border-radius: 3px;
-                color: $bg-button-hover;
+                color: $text-color;
                 font-size: 1.5rem;
-                background-color: $text-color;
+                background-color: $first-bg-color;
 
                 &:hover {
                     background-color: $second-bg-button-hover;
