@@ -1296,67 +1296,68 @@
     width: 100%;
   }
 }
-.musicpage-container .mucic-page-content > div {
-  color: #1c203c;
-  padding: 3vh;
+.musicpage-container .mucic-page-content .list-search-music-janre {
+  display: flex;
+  gap: 10vw;
+  margin-top: 3vh;
+  flex-wrap: wrap;
 }
-.musicpage-container .mucic-page-content > div h1 {
+.musicpage-container .mucic-page-content .list-search-music-janre div {
+  font-size: 14px;
+  letter-spacing: 0.045em;
+  line-height: 210%;
+}
+.musicpage-container .mucic-page-content .music-page-content-best-module {
+  padding: 5%;
+  color: #1c203c;
+}
+.musicpage-container .mucic-page-content .music-page-content-best-module h1 {
   margin-bottom: 3vh;
 }
-.musicpage-container .mucic-page-content > div h3 {
+.musicpage-container .mucic-page-content .music-page-content-best-module h3 {
   margin-top: 5vh;
 }
-.musicpage-container .mucic-page-content > div .best-stations {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations {
   margin-top: 5vh;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule {
   display: flex;
   align-items: center;
   gap: 3vh;
   padding: 1vw 0;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule .wrapper-music-page-file-img-play {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play {
   width: 100px;
   height: 100px;
   position: relative;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule .wrapper-music-page-file-img-play img {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play img {
   width: 100%;
   height: 100%;
   position: absolute;
   display: block;
   object-fit: cover;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule .wrapper-music-page-file-img-play .ico-pl-test {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play .ico-pl-test {
   width: 50%;
   height: 50%;
   display: block;
   right: 0;
   bottom: 0;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule .wrapper-title-music-station-module {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module {
   line-height: 180%;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-module {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-module {
   color: #1c203c;
   font-weight: lighter;
   letter-spacing: 0.1rem;
 }
-.musicpage-container .mucic-page-content > div .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-Janre {
+.musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-Janre {
   color: #7e808f;
   font-weight: lighter;
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
-}
-.musicpage-container .mucic-page-content > div .list-search-music-janre {
-  display: flex;
-  gap: 10vw;
-  margin-top: 3vh;
-}
-.musicpage-container .mucic-page-content > div .list-search-music-janre div {
-  font-size: 14px;
-  letter-spacing: 0.045em;
-  line-height: 210%;
 }
 .musicpage-container .mucic-page-content footer {
   color: #1c203c;

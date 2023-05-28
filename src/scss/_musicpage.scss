@@ -135,7 +135,24 @@
             width: 100%;
         }
 
-        >div {
+        .list-search-music-janre {
+            display: flex;
+            gap: 10vw;
+            margin-top: 3vh;
+            flex-wrap: wrap;
+
+            div {
+                font-size: 14px;
+                letter-spacing: .045em;
+                line-height: 210%;
+
+            }
+        }
+
+        .music-page-content-best-module {
+            padding: 5%;
+            color: $first-bg-color;
+
             h1 {
                 margin-bottom: 3vh;
             }
@@ -146,11 +163,13 @@
 
             .best-stations {
                 margin-top: 5vh;
+
                 .best-station-molule {
                     display: flex;
                     align-items: center;
                     gap: 3vh;
                     padding: 1vw 0;
+
 
                     .wrapper-music-page-file-img-play {
                         width: 100px;
@@ -177,6 +196,7 @@
 
                     .wrapper-title-music-station-module {
                         line-height: 180%;
+
                         .title-music-module {
                             color: $first-bg-color;
                             font-weight: lighter;
@@ -193,21 +213,9 @@
                 }
             }
 
-            color: $first-bg-color;
-            padding: 3vh;
 
-            .list-search-music-janre {
-                display: flex;
-                gap: 10vw;
-                margin-top: 3vh;
 
-                div {
-                    font-size: 14px;
-                    letter-spacing: .045em;
-                    line-height: 210%;
 
-                }
-            }
         }
 
         footer {
