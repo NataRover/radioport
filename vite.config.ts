@@ -10,6 +10,7 @@ export default defineConfig({
         audio: resolve(__dirname, 'audiobook.html'),
         listen: resolve(__dirname, 'listenpage.html'),
         search: resolve(__dirname, 'searchpage.html'),
+        music: resolve(__dirname, 'musicpage.html'),
       },
     },
   },

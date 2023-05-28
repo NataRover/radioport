@@ -4,12 +4,23 @@
   .audiobook-navigation-module-change-bg {
     background-color: $bg-audiobook;
 
-    .audiobook-link-menu,
-    .audiobook-regisr-module {
-      box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
-      a {
+    .audiobook-link-menu {
+      .activ-page-menu {
         span {
-          color: $second-bg-button-hover;
+          color: $first-bg-color;
+          font-weight: bold;
+        }
+      }
+
+
+      .audiobook-link-menu,
+      .audiobook-regisr-module {
+        box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
+
+        a {
+          span {
+            color: $second-bg-button-hover;
+          }
         }
       }
     }
@@ -65,6 +76,13 @@
       overflow-y: scroll;
       padding: 5% 10%;
 
+      .activ-page-menu {
+        span {
+          color: $first-bg-color;
+          font-weight: bold;
+        }
+      }
+
       .logo {
         border: 2px solid $second-bg-color;
         border-radius: 3px;
@@ -111,6 +129,10 @@
 
     .classic-audio-file {
       padding: 3% 5%;
+
+      h2 {
+        margin-bottom: 3vh;
+      }
 
       /*карусель*/
       .gallery-module-carousel {
@@ -235,7 +257,6 @@
 
     footer {
       color: $first-bg-color;
-      padding: 0;
       margin-top: 5%;
       padding: 3%;
     }
