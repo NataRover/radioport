@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/css/player.css">
+</head>
+
+<body>
+    <div class="radio-player">
+        <!-- Player goes here -->
+        <div class="radio-player">
+            <audio src="..." class="visually-hidden" id="stream">
+                <!-- More stuff here -->
+            </audio>
+        </div>
+        <div class="player-controls">
+            <button name="play-pause" class="button play-pause-button" aria-label="Play/pause">
+                <i class="fas fa-play" aria-hidden></i>
+            </button>
+
+            <div class="volume-and-title">
+                <div class="currently-playing" aria-label="Currently playing">
+                    <span class="currently-playing-label">Now playing on Some Radio Station</span>
+                    <span class="currently-playing-title">Listen to Some Radio Station</span>
+                </div>
+
+                <div class="volume-controls">
+                    <button name="mute" class="button mute-button" aria-label="Mute/unmute">
+                        <i class="fas fa-volume-down" aria-hidden></i>
+                    </button>
+
+                    <input type="range" name="volume" class="volume" min="0" max="1" step="0.05" value="0.2"
+                        aria-label="Volume">
+                </div>
+            </div>
+        </div>
+        <script src="src/player.js"></script>
+</body>
+
+</html>

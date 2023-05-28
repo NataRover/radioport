@@ -76,6 +76,13 @@
       overflow-y: scroll;
       padding: 5% 10%;
 
+      a {
+        :hover {
+          color: $first-bg-color;
+        }
+      }
+
+
       .activ-page-menu {
         span {
           color: $first-bg-color;

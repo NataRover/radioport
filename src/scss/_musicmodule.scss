@@ -1,0 +1,235 @@
+@import "variable";
+
+.content-listen {
+    width: 80%;
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+    }
+
+    .container-items-wrapper-music-module {
+        padding: 3% 5%;
+        width: 100%;
+        gap: 3%;
+        @include flex-between;
+        background: linear-gradient(rgba(16, 193, 137, 0.8), rgb(241, 243, 242));
+
+        @media screen and (max-width: 768px) {
+
+            flex-direction: column;
+        }
+
+        .listen-logo {
+
+            .img-wrapper {
+                width: 20vw;
+                height: 20vw;
+                background-color: rgb(243, 224, 200);
+                filter: drop-shadow(0 8px 12px rgba(28, 31, 58, .5));
+                border-radius: 15px;
+
+                @media screen and (max-width: 768px) {
+                    width: 35vw;
+                    height: 35vw;
+                    margin-bottom: 3vh;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        .title-buttons-container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                @include flex-center;
+            }
+
+            .title-container {
+                h1 {
+                    font-size: 3rem;
+                    margin-bottom: 1vw;
+                }
+
+                p {
+                    margin-bottom: 2vw;
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .button-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .play-icon-listen {
+                    width: 50px;
+                    cursor: pointer;
+                }
+
+                .favorite-icon-module {
+                    width: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .info-button-module {
+        padding: 0 5%;
+
+        .info {
+            cursor: pointer;
+            @include flex-center;
+            gap: 5px;
+
+            :last-child {
+                width: 10px;
+                height: 10px;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 5% 0;
+        padding: 0;
+        height: 1vh;
+        border: none;
+        background: linear-gradient(45deg, $bg-button-hover, $second-bg-color);
+    }
+
+    .content-listen-episode {
+        padding: 0 5%;
+        margin-bottom: 5vh;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .apizod-module {
+            margin-top: 3vh;
+            display: flex;
+            gap: 3vw;
+
+            .audiobook-apizode-module-player {
+                width: 40px;
+                cursor: pointer;
+            }
+
+            .about-audiobook-apizode-module-player {
+                font-size: 0.8rem;
+                line-height: 180%;
+                letter-spacing: 1px;
+
+                :first-child {
+                    color: $first-bg-color;
+                }
+
+                :nth-child(2) {
+                    color: $text-color-audiobook;
+                }
+
+                .about-audiobook-apizode-module-player-drop {
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    cursor: pointer;
+
+                    p {
+                        color: $first-bg-color;
+                        font-weight: bold;
+                    }
+
+                    img {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.music-page-content-best-module {
+    padding: 5%;
+    color: $first-bg-color;
+
+    h1 {
+        margin-bottom: 3vh;
+    }
+
+    h3 {
+        margin-top: 5vh;
+    }
+
+    .best-stations {
+        margin-top: 5vh;
+
+        .best-station-molule {
+            display: flex;
+            align-items: center;
+            gap: 3vh;
+            padding: 1vw 0;
+
+            .wrapper-music-page-file-img-play {
+                width: 100px;
+                height: 100px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: block;
+                    object-fit: cover;
+                }
+
+                .ico-pl-test {
+                    width: 50%;
+                    height: 50%;
+                    display: block;
+                    right: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+            }
+
+            .wrapper-title-music-station-module {
+                line-height: 180%;
+
+                .title-music-module {
+                    color: $first-bg-color;
+                    font-weight: lighter;
+                    letter-spacing: 0.1rem;
+                }
+
+                .title-music-Janre {
+                    color: $text-color-audiobook;
+                    font-weight: lighter;
+                    letter-spacing: 0.1rem;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

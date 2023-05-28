@@ -11,6 +11,7 @@ export default defineConfig({
         listen: resolve(__dirname, 'listenpage.html'),
         search: resolve(__dirname, 'searchpage.html'),
         music: resolve(__dirname, 'musicpage.html'),
+        musicmodule: resolve(__dirname, 'musicmodule.html'),
       },
     },
   },
