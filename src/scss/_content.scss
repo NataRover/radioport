@@ -145,12 +145,6 @@
                         filter: brightness(0.5);
                         transition: transform .5s;
                     }
-                    .ico-play{
-                        visibility: hidden;
-                    }
-                    :hover +.ico-play{                       
-                        visibility: visible;                      
-                    }
 
                     @media screen and (max-width:768px) {
                         margin-top: 15%;
@@ -469,10 +463,6 @@
                 border-radius: 3px;
                 display: block;
             }
-           
-            :hover +.ico-play-grid{                       
-                visibility: visible;                      
-            }
 
             .ico-play-grid {
                 bottom: 10%;
@@ -481,7 +471,6 @@
                 height: 40px;
                 position: absolute;
                 cursor: pointer;
-                visibility: hidden;
             }
         }
     }
@@ -526,3 +515,11 @@
     }
 }
 
+//кнопки play на левом блоке картинок контента
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
