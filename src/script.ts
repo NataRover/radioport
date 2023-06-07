@@ -96,6 +96,7 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".box").forEach((box) => observer.observe(box));
 
 // КНОПКА PLAY
+//на основном контенте
 let playShow = document.querySelectorAll(".wrapper-play-radio");
 let icoPlay = document.querySelectorAll(".ico-play");
 
@@ -107,7 +108,7 @@ for (let i = 0, q = 0; i < playShow.length, q < icoPlay.length; i++, q++) {
     icoPlay[q].classList.remove("visible");
   });
 }
-
+//на грид-футере
 let wrapperGrid = document.querySelectorAll(".wrapper-grid-img");
 let icoPlayGrid = document.querySelectorAll(".ico-play-grid");
 
