@@ -95,33 +95,5 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".box").forEach((box) => observer.observe(box));
 
-// КНОПКА PLAY
-let playShow = document.querySelectorAll(".wrapper-play-radio");
-let icoPlay = document.querySelectorAll(".ico-play");
-
-for (let i = 0, q = 0; i < playShow.length, q < icoPlay.length; i++, q++) {
-  playShow[i].addEventListener("mouseover", function () {
-    icoPlay[q].classList.add("visible");
-  });
-  playShow[i].addEventListener("mouseout", function () {
-    icoPlay[q].classList.remove("visible");
-  });
-}
-
-let wrapperGrid = document.querySelectorAll(".wrapper-grid-img");
-let icoPlayGrid = document.querySelectorAll(".ico-play-grid");
-
-for (
-  let j = 0, f = 0;
-  j < wrapperGrid.length, f < icoPlayGrid.length;
-  j++, f++
-) {
-  wrapperGrid[j].addEventListener("mouseover", function () {
-    icoPlayGrid[f].classList.add("visible");
-  });
-  wrapperGrid[j].addEventListener("mouseout", function () {
-    icoPlayGrid[f].classList.remove("visible");
-  });
-}
 
 
