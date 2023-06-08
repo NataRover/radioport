@@ -24,7 +24,10 @@
 
 body {
     overflow: overlay !important;
-
+  
+    @media screen and (max-width:460px) {
+       background-color: $first-bg-color;
+    }
 }
 
 

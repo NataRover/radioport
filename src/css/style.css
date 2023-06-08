@@ -55,19 +55,19 @@
     padding: 5% 10%;
   }
   .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo {
-    border: 2px solid #14b5ab;
+    border: 2px solid #21fff0;
     border-radius: 3px;
     text-align: center;
     margin-bottom: 2vh;
   }
   .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
     font-size: 1.5rem;
-    color: #14b5ab;
+    color: #21fff0;
     font-weight: bold;
   }
   .opasity-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
     font-size: 1.5rem;
-    color: #14b5ab;
+    color: #21fff0;
     font-weight: bold;
   }
 }
@@ -87,7 +87,7 @@
 .header {
   width: 100%;
   background-color: rgb(135, 160, 168);
-  background-image: url(../img/img_content/podcasty.jpg);
+  background-image: url(../img/img_content/img_11.jpg);
   background-size: cover;
   /* МЕНЮ НАВИГАЦИЯ*/
   /* СЛЕНГ ХЕДЕРА*/
@@ -109,8 +109,8 @@
   font-size: 1rem;
 }
 .header .header-navigation a :hover {
-  color: #14b5ab;
-  border-bottom: 1px solid #14b5ab;
+  color: #21fff0;
+  border-bottom: 1px solid #21fff0;
 }
 .header .header-navigation a span {
   color: #ffffff;
@@ -134,10 +134,10 @@
   }
 }
 .header .header-navigation .logo {
-  color: #14b5ab;
+  color: #21fff0;
 }
 .header .header-navigation .logo span {
-  color: #14b5ab;
+  color: #21fff0;
 }
 .header .header-navigation .logo :hover {
   border: none;
@@ -279,7 +279,7 @@
 }
 .footer .futer-modul-logo .logo {
   width: 20%;
-  color: #14b5ab;
+  color: #21fff0;
   font-size: 3.5rem;
   padding-bottom: 1vh;
 }
@@ -343,10 +343,21 @@
   font-size: 1.5rem;
   background-color: #1c203c;
 }
+@media screen and (max-width: 460px) {
+  .content-container .sub-title a span {
+    background-color: #21fff0;
+    color: #1c203c;
+  }
+}
 .content-container .sub-title a span:hover {
   background-color: rgb(165, 165, 165);
   color: #ffffff;
   border-style: none;
+}
+@media screen and (max-width: 460px) {
+  .content-container .sub-title p {
+    color: #ffffff;
+  }
 }
 .content-container .search-module {
   width: 80%;
@@ -415,10 +426,24 @@
     font-weight: 600;
     color: #1c203c;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 460px) {
+  .content-container .box-scroll-module .left-parallax-module .left-title .left-title-title {
+    color: #459FBF;
+  }
+}
+@media screen and (max-width: 768px) {
   .content-container .box-scroll-module .left-parallax-module .left-title .left-title-subtitle {
     display: inline-block;
     margin-bottom: 3vh;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 460px) {
+  .content-container .box-scroll-module .left-parallax-module .left-title .left-title-subtitle {
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 768px) {
   .content-container .box-scroll-module .left-parallax-module .left-title .left-title-btn-listen span {
     background-color: #459FBF;
     padding: 1% 3%;
@@ -427,13 +452,20 @@
     color: #ffffff;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 460px) {
+  .content-container .box-scroll-module .left-parallax-module .left-title .left-title-btn-listen span {
+    background-color: #21fff0;
+    color: #1c203c;
+  }
+}
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img {
   display: grid;
   justify-content: start;
+  justify-items: center;
   align-items: start;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  gap: 2%;
+  gap: 1%;
   margin-bottom: 20%;
 }
 @media screen and (max-width: 768px) {
@@ -448,6 +480,7 @@
   -moz-box-shadow: -5px -5px 5px -5px #1c203c;
   box-shadow: -5px -5px 5px -5px #1c203c;
   border-radius: 3px;
+  height: 100%;
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio :first-child:hover {
   filter: brightness(0.5);
@@ -467,21 +500,23 @@
   border: 1px solid rgb(165, 165, 165);
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio .ico-play {
-  bottom: 5%;
-  right: 5%;
+  bottom: -20px;
+  right: 10px;
   width: 40px;
   height: 40px;
   object-fit: cover;
   position: absolute;
   cursor: pointer;
 }
-.content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(1) img {
-  height: 80%;
+.content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(1) {
+  height: 60vh;
+  width: 100%;
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(2) {
   align-self: self-end;
   width: 15vw;
   height: 15vw;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(2) {
@@ -501,10 +536,8 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 768px) {
-  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(4) {
-    margin: 0;
-  }
+.content-container .box-scroll-module .left-parallax-module .wrapper-box-img :nth-child(4) {
+  margin-top: -30px;
 }
 .content-container .box-scroll-module .right-parallax-module {
   position: relative;
@@ -613,6 +646,11 @@
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 460px) {
+  .content-container .module-blok-bg-text .modul-block-text :nth-child(1) {
+    color: #459FBF;
+  }
+}
 .content-container .module-blok-bg-text .modul-block-text :nth-child(2) {
   color: #459FBF;
   font-size: 3cqi;
@@ -624,16 +662,26 @@
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 460px) {
+  .content-container .module-blok-bg-text .modul-block-text :nth-child(2) {
+    color: #21fff0;
+  }
+}
 .content-container .module-blok-bg-text .modul-block-text :nth-child(3) {
   margin-top: 5%;
   line-height: 140%;
+}
+@media screen and (max-width: 460px) {
+  .content-container .module-blok-bg-text .modul-block-text :nth-child(3) {
+    color: #ffffff;
+  }
 }
 .content-container hr {
   margin: 5% 0;
   padding: 0;
   height: 1vh;
   border: none;
-  background: linear-gradient(45deg, #333, #14b5ab);
+  background: linear-gradient(45deg, #333, #21fff0);
 }
 .content-container .modul-block-text-other {
   color: #333;
@@ -657,8 +705,13 @@
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 460px) {
+  .content-container .modul-block-text-other :nth-child(1) {
+    color: #459FBF;
+  }
+}
 .content-container .modul-block-text-other :nth-child(2) {
-  color: #14b5ab;
+  color: #21fff0;
   font-size: 3cqi;
   font-weight: bold;
   text-transform: uppercase;
@@ -672,9 +725,19 @@
   margin-top: 1%;
   line-height: 140%;
 }
+@media screen and (max-width: 460px) {
+  .content-container .modul-block-text-other :nth-child(3) {
+    color: #ffffff;
+  }
+}
 
 .module-grid {
   background: linear-gradient(180deg, #ffffff 10%, #1c203c 0, #7fcfec 100%);
+}
+@media screen and (max-width: 460px) {
+  .module-grid {
+    background: linear-gradient(180deg, #ffffff 0, #1c203c 0, #7fcfec 100%);
+  }
 }
 .module-grid .grid-content {
   display: flex;
@@ -737,8 +800,8 @@
   display: block;
 }
 .module-grid .grid-content .wrapper-grid-img .ico-play-grid {
-  bottom: 10%;
-  right: 10%;
+  bottom: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   position: absolute;
@@ -755,7 +818,7 @@
   .module-grid .sub-module-btn {
     font-size: 1.5rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 5vw auto;
   }
 }
 .module-grid .sub-module-btn p {
@@ -855,12 +918,15 @@
   overflow-y: scroll;
   padding: 5% 10%;
 }
+.audiobook-container .audiobook-navigation-module .audiobook-link-menu a :hover {
+  color: #1c203c;
+}
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu .activ-page-menu span {
   color: #1c203c;
   font-weight: bold;
 }
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu .logo {
-  border: 2px solid #14b5ab;
+  border: 2px solid #21fff0;
   border-radius: 3px;
   text-align: center;
   margin-bottom: 2vh;
@@ -1143,7 +1209,7 @@
   padding: 0;
   height: 1vh;
   border: none;
-  background: linear-gradient(45deg, #333, #14b5ab);
+  background: linear-gradient(45deg, #333, #21fff0);
 }
 .content-listen .content-listen-episode {
   padding: 0 5%;
@@ -1262,7 +1328,7 @@
   font-weight: bold;
 }
 .musicpage-container .audiobook-navigation-module .audiobook-link-menu .logo {
-  border: 2px solid #14b5ab;
+  border: 2px solid #21fff0;
   border-radius: 3px;
   text-align: center;
   margin-bottom: 2vh;
@@ -1339,11 +1405,12 @@
   object-fit: cover;
 }
 .musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play .ico-pl-test {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   display: block;
   right: 0;
   bottom: 0;
+  cursor: pointer;
 }
 .musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module {
   line-height: 180%;
@@ -1365,6 +1432,211 @@
   padding: 3%;
 }
 
+.content-listen {
+  width: 80%;
+}
+@media screen and (max-width: 991px) {
+  .content-listen {
+    width: 100%;
+  }
+}
+.content-listen .container-items-wrapper-music-module {
+  padding: 3% 5%;
+  width: 100%;
+  gap: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(16, 193, 137, 0.8), rgb(241, 243, 242));
+}
+@media screen and (max-width: 768px) {
+  .content-listen .container-items-wrapper-music-module {
+    flex-direction: column;
+  }
+}
+.content-listen .container-items-wrapper-music-module .listen-logo .img-wrapper {
+  width: 20vw;
+  height: 20vw;
+  background-color: rgb(243, 224, 200);
+  filter: drop-shadow(0 8px 12px rgba(28, 31, 58, 0.5));
+  border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .content-listen .container-items-wrapper-music-module .listen-logo .img-wrapper {
+    width: 35vw;
+    height: 35vw;
+    margin-bottom: 3vh;
+  }
+}
+.content-listen .container-items-wrapper-music-module .listen-logo .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.content-listen .container-items-wrapper-music-module .title-buttons-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .content-listen .container-items-wrapper-music-module .title-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.content-listen .container-items-wrapper-music-module .title-buttons-container .title-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1vw;
+}
+.content-listen .container-items-wrapper-music-module .title-buttons-container .title-container p {
+  margin-bottom: 2vw;
+}
+@media screen and (max-width: 768px) {
+  .content-listen .container-items-wrapper-music-module .title-buttons-container .title-container {
+    width: 100%;
+    text-align: center;
+  }
+}
+.content-listen .container-items-wrapper-music-module .title-buttons-container .button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content-listen .container-items-wrapper-music-module .title-buttons-container .button-container .play-icon-listen {
+  width: 50px;
+  cursor: pointer;
+}
+.content-listen .container-items-wrapper-music-module .title-buttons-container .button-container .favorite-icon-module {
+  width: 30px;
+  cursor: pointer;
+}
+.content-listen .info-button-module {
+  padding: 0 5%;
+}
+.content-listen .info-button-module .info {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.content-listen .info-button-module .info :last-child {
+  width: 10px;
+  height: 10px;
+}
+.content-listen .info-button-module .info :last-child img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.content-listen hr {
+  margin: 5% 0;
+  padding: 0;
+  height: 1vh;
+  border: none;
+  background: linear-gradient(45deg, #333, #21fff0);
+}
+.content-listen .content-listen-episode {
+  padding: 0 5%;
+  margin-bottom: 5vh;
+}
+.content-listen .content-listen-episode h3 {
+  font-size: 1rem;
+}
+.content-listen .content-listen-episode .apizod-module {
+  margin-top: 3vh;
+  display: flex;
+  gap: 3vw;
+}
+.content-listen .content-listen-episode .apizod-module .audiobook-apizode-module-player {
+  width: 40px;
+  cursor: pointer;
+}
+.content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player {
+  font-size: 0.8rem;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+.content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player :first-child {
+  color: #1c203c;
+}
+.content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player :nth-child(2) {
+  color: #7e808f;
+}
+.content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+.content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop p {
+  color: #1c203c;
+  font-weight: bold;
+}
+.content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop img {
+  width: 8px;
+  height: 8px;
+}
+
+.music-page-content-best-module {
+  padding: 5%;
+  padding-top: 0;
+  color: #1c203c;
+}
+.music-page-content-best-module h1 {
+  margin-bottom: 3vh;
+}
+.music-page-content-best-module h3 {
+  margin-top: 5vh;
+}
+.music-page-content-best-module .best-stations {
+  margin-top: 5vh;
+}
+.music-page-content-best-module .best-stations .best-station-molule {
+  display: flex;
+  align-items: center;
+  gap: 3vh;
+  padding: 1vw 0;
+}
+.music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  object-fit: cover;
+}
+.music-page-content-best-module .best-stations .best-station-molule .wrapper-music-page-file-img-play .ico-pl-test {
+  width: 40%;
+  height: 40%;
+  display: block;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module {
+  line-height: 180%;
+}
+.music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-module {
+  color: #1c203c;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+}
+.music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-Janre {
+  color: #7e808f;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1378,6 +1650,11 @@
 
 body {
   overflow: overlay !important;
+}
+@media screen and (max-width: 460px) {
+  body {
+    background-color: #1c203c;
+  }
 }
 
 ::-webkit-scrollbar {

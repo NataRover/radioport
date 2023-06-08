@@ -1,13 +1,15 @@
 import "./css/style.css";
 import "./scss/style.scss";
 
-let icoPlay = document.querySelectorAll(".ico-play");
+let btnPlay = document.querySelectorAll(".play-music");
+let btnPlayPause = document.querySelectorAll(".play-pause-music");
+console.log(btnPlayPause)
 
-/* Перебираем списки */
-icoPlay.forEach(function (el) {
-  /* Назначаем обработчик текущему списку */
+/* Перебираем кнопки play*/
+btnPlay.forEach(function (el) {
+  /* Назначаем обработчик кнопкам */
   el.addEventListener("click", function () {
-    console.log("click")
-    // el.src = "../img/img_music_page/pause.svg";
+    console.log("click");
+    // btnPlayPause.src = "../img/img_music_page/pause.svg";
   });
 });
