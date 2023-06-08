@@ -25,7 +25,7 @@
     top: 0;
     left: 0;
     bottom: 5%;
-    background-color: #1c203c;
+    background-color: #0f233a;
     z-index: 3;
   }
 }
@@ -97,7 +97,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1c203c;
+  background-color: #0f233a;
   padding: 0 5%;
   z-index: 1;
   /* БУРГЕР МЕНЮ*/
@@ -173,7 +173,7 @@
   padding: 0.9vw;
   border-radius: 3px;
   background-color: #7fcfec;
-  color: #1c203c;
+  color: #0f233a;
   font-size: inherit;
   cursor: pointer;
 }
@@ -229,7 +229,7 @@
   padding: 12px;
   border-radius: 3px;
   background-color: #7fcfec;
-  color: #1c203c;
+  color: #0f233a;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -246,7 +246,7 @@
   padding: 0;
   transition: all 0.1s ease;
   opacity: 0.9;
-  box-shadow: 0px 0px 20px 0px #1c203c;
+  box-shadow: 0px 0px 20px 0px #0f233a;
   transition: top 0.4s ease-in;
 }
 
@@ -263,7 +263,7 @@
 }
 
 .footer {
-  background-color: #1c203c;
+  background-color: #0f233a;
   padding: 3% 5%;
 }
 .footer .futer-modul-logo {
@@ -341,12 +341,12 @@
   border-radius: 3px;
   color: #ffffff;
   font-size: 1.5rem;
-  background-color: #1c203c;
+  background-color: #0f233a;
 }
 @media screen and (max-width: 460px) {
   .content-container .sub-title a span {
     background-color: #21fff0;
-    color: #1c203c;
+    color: #0f233a;
   }
 }
 .content-container .sub-title a span:hover {
@@ -374,24 +374,24 @@
   }
 }
 .content-container .search-module input.nosubmit {
-  border: 1px solid #1c203c;
+  border: 1px solid #0f233a;
   width: 100%;
   padding: 1% 1% 1% 6%;
   border-radius: 3px;
   background: transparent url("../img/img_content/search.svg") no-repeat 1vw center;
   background-size: 2vw;
   background-color: rgba(165, 165, 165, 0.5);
-  color: #1c203c;
+  color: #0f233a;
   font-size: 1rem;
 }
 .content-container .sub-title {
   margin-top: 5%;
   text-align: center;
   font-size: 1.5rem;
-  color: #1c203c;
+  color: #0f233a;
 }
 .content-container .sub-title span {
-  background-color: #1c203c;
+  background-color: #0f233a;
   padding: 1% 3%;
   margin-top: 2%;
   border-radius: 2%;
@@ -424,7 +424,7 @@
     margin-bottom: 3vh;
     font-size: 2rem;
     font-weight: 600;
-    color: #1c203c;
+    color: #0f233a;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 460px) {
@@ -455,7 +455,7 @@
 @media screen and (max-width: 768px) and (max-width: 460px) {
   .content-container .box-scroll-module .left-parallax-module .left-title .left-title-btn-listen span {
     background-color: #21fff0;
-    color: #1c203c;
+    color: #0f233a;
   }
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img {
@@ -476,9 +476,9 @@
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio {
   position: relative;
   cursor: pointer;
-  -webkit-box-shadow: -5px -5px 5px -5px #1c203c;
-  -moz-box-shadow: -5px -5px 5px -5px #1c203c;
-  box-shadow: -5px -5px 5px -5px #1c203c;
+  -webkit-box-shadow: -5px -5px 5px -5px #0f233a;
+  -moz-box-shadow: -5px -5px 5px -5px #0f233a;
+  box-shadow: -5px -5px 5px -5px #0f233a;
   border-radius: 3px;
   height: 100%;
 }
@@ -489,6 +489,13 @@
 @media screen and (max-width: 768px) {
   .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio {
     margin-top: 15%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio {
+    -webkit-box-shadow: -5px -5px 5px -5px #21fff0;
+    -moz-box-shadow: -5px -5px 5px -5px #21fff0;
+    box-shadow: -5px -5px 5px -7px #21fff0;
   }
 }
 .content-container .box-scroll-module .left-parallax-module .wrapper-box-img .wrapper-play-radio img {
@@ -563,7 +570,7 @@
   color: rgb(165, 165, 165);
 }
 .content-container .box-scroll-module .right-parallax-module .right-modul-text .right-modul-title .active {
-  color: #1c203c;
+  color: #0f233a;
   transition: transform 0.1s;
 }
 .content-container .box-scroll-module .right-parallax-module .right-modul-text-drop-down {
@@ -579,7 +586,7 @@
   line-height: 140%;
 }
 .content-container .box-scroll-module .right-parallax-module .right-modul-text-drop-down .right-p-drop-title p {
-  color: #1c203c;
+  color: #0f233a;
   font-size: 1.2rem;
   padding-bottom: 5%;
 }
@@ -589,7 +596,7 @@
 .content-container .box-scroll-module .right-parallax-module .right-modul-text-drop-down .right-p-drop-title .right-p-drop-listen-btn span {
   padding: 1% 4%;
   border-radius: 3px;
-  border: 1px solid #1c203c;
+  border: 1px solid #0f233a;
   color: #333;
   font-size: 1rem;
 }
@@ -614,9 +621,9 @@
   max-height: 50vh;
   object-fit: cover;
   display: block;
-  -webkit-box-shadow: -5px -5px 5px -5px #1c203c;
-  -moz-box-shadow: -5px -5px 5px -5px #1c203c;
-  box-shadow: -5px -5px 5px -5px #1c203c;
+  -webkit-box-shadow: -5px -5px 5px -5px #0f233a;
+  -moz-box-shadow: -5px -5px 5px -5px #0f233a;
+  box-shadow: -5px -5px 5px -5px #0f233a;
   border-radius: 3px;
 }
 @media screen and (max-width: 768px) {
@@ -636,7 +643,7 @@
   }
 }
 .content-container .module-blok-bg-text .modul-block-text :nth-child(1) {
-  color: #1c203c;
+  color: #0f233a;
   font-size: 3cqi;
   font-weight: bold;
   text-transform: uppercase;
@@ -695,7 +702,7 @@
   }
 }
 .content-container .modul-block-text-other :nth-child(1) {
-  color: #1c203c;
+  color: #0f233a;
   font-size: 3cqi;
   font-weight: bold;
   text-transform: uppercase;
@@ -732,11 +739,11 @@
 }
 
 .module-grid {
-  background: linear-gradient(180deg, #ffffff 10%, #1c203c 0, #7fcfec 100%);
+  background: linear-gradient(180deg, #ffffff 10%, #0f233a 0, #7fcfec 100%);
 }
 @media screen and (max-width: 460px) {
   .module-grid {
-    background: linear-gradient(180deg, #ffffff 0, #1c203c 0, #7fcfec 100%);
+    background: linear-gradient(180deg, #ffffff 0, #0f233a 0, #7fcfec 100%);
   }
 }
 .module-grid .grid-content {
@@ -835,7 +842,7 @@
   border-radius: 3px;
   color: #ffffff;
   font-size: 1.5rem;
-  background-color: #1c203c;
+  background-color: #0f233a;
 }
 .module-grid .sub-module-btn a span:hover {
   background-color: rgb(165, 165, 165);
@@ -855,7 +862,7 @@
   background-color: rgb(241, 242, 243);
 }
 .opasity-container .audiobook-navigation-module-change-bg .audiobook-link-menu .activ-page-menu span {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .opasity-container .audiobook-navigation-module-change-bg .audiobook-link-menu .audiobook-link-menu,
@@ -919,10 +926,10 @@
   padding: 5% 10%;
 }
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu a :hover {
-  color: #1c203c;
+  color: #0f233a;
 }
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu .activ-page-menu span {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu .logo {
@@ -933,12 +940,12 @@
 }
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
   font-size: 1.5rem;
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .audiobook-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
   font-size: 1.5rem;
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .audiobook-container .audiobook-regisr-module {
@@ -949,7 +956,7 @@
   box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.1);
 }
 .audiobook-container .audiobook-regisr-module span {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: lighter;
 }
 .audiobook-container .audiobook-content {
@@ -1073,7 +1080,7 @@
   transition: background-color 0.5s, border-color 0.5s;
 }
 .audiobook-container .audiobook-content footer {
-  color: #1c203c;
+  color: #0f233a;
   margin-top: 5%;
   padding: 3%;
 }
@@ -1233,7 +1240,7 @@
   letter-spacing: 1px;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player :first-child {
-  color: #1c203c;
+  color: #0f233a;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player :nth-child(2) {
   color: #7e808f;
@@ -1245,7 +1252,7 @@
   cursor: pointer;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop p {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop img {
@@ -1257,7 +1264,7 @@
   background-color: rgb(241, 242, 243);
 }
 .opasity-container .audiobook-navigation-module-change-bg .audiobook-link-menu .activ-page-menu span {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .opasity-container .audiobook-navigation-module-change-bg .audiobook-link-menu .audiobook-link-menu,
@@ -1321,10 +1328,10 @@
   padding: 5% 10%;
 }
 .musicpage-container .audiobook-navigation-module .audiobook-link-menu a :hover {
-  color: #1c203c;
+  color: #0f233a;
 }
 .musicpage-container .audiobook-navigation-module .audiobook-link-menu .activ-page-menu span {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .musicpage-container .audiobook-navigation-module .audiobook-link-menu .logo {
@@ -1335,12 +1342,12 @@
 }
 .musicpage-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-up {
   font-size: 1.5rem;
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .musicpage-container .audiobook-navigation-module .audiobook-link-menu .logo .logo-down {
   font-size: 1.5rem;
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .musicpage-container .audiobook-regisr-module {
@@ -1351,7 +1358,7 @@
   box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.1);
 }
 .musicpage-container .audiobook-regisr-module span {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: lighter;
 }
 .musicpage-container .mucic-page-content {
@@ -1375,7 +1382,7 @@
 }
 .musicpage-container .mucic-page-content .music-page-content-best-module {
   padding: 5%;
-  color: #1c203c;
+  color: #0f233a;
 }
 .musicpage-container .mucic-page-content .music-page-content-best-module h1 {
   margin-bottom: 3vh;
@@ -1416,7 +1423,7 @@
   line-height: 180%;
 }
 .musicpage-container .mucic-page-content .music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-module {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: lighter;
   letter-spacing: 0.1rem;
 }
@@ -1427,7 +1434,7 @@
   font-size: 0.9rem;
 }
 .musicpage-container .mucic-page-content footer {
-  color: #1c203c;
+  color: #0f233a;
   margin-top: 5%;
   padding: 3%;
 }
@@ -1562,7 +1569,7 @@
   letter-spacing: 1px;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player :first-child {
-  color: #1c203c;
+  color: #0f233a;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player :nth-child(2) {
   color: #7e808f;
@@ -1574,7 +1581,7 @@
   cursor: pointer;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop p {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: bold;
 }
 .content-listen .content-listen-episode .apizod-module .about-audiobook-apizode-module-player .about-audiobook-apizode-module-player-drop img {
@@ -1585,7 +1592,7 @@
 .music-page-content-best-module {
   padding: 5%;
   padding-top: 0;
-  color: #1c203c;
+  color: #0f233a;
 }
 .music-page-content-best-module h1 {
   margin-bottom: 3vh;
@@ -1626,7 +1633,7 @@
   line-height: 180%;
 }
 .music-page-content-best-module .best-stations .best-station-molule .wrapper-title-music-station-module .title-music-module {
-  color: #1c203c;
+  color: #0f233a;
   font-weight: lighter;
   letter-spacing: 0.1rem;
 }
@@ -1653,7 +1660,7 @@ body {
 }
 @media screen and (max-width: 460px) {
   body {
-    background-color: #1c203c;
+    background-color: #0f233a;
   }
 }
 
@@ -1665,6 +1672,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(165, 165, 165);
   border-radius: 10px;
-  border: 1px solid #1c203c;
+  border: 1px solid #0f233a;
   background-clip: padding-box;
 }

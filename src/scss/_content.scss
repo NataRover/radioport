@@ -179,7 +179,12 @@
                     @media screen and (max-width:768px) {
                         margin-top: 15%;
                     }
-
+                    @media screen and (max-width:460px) {
+                        -webkit-box-shadow: -5px -5px 5px -5px $second-bg-color;
+                        -moz-box-shadow: -5px -5px 5px -5px $second-bg-color;
+                        box-shadow: -5px -5px 5px -7px $second-bg-color;
+                        
+                    }
                     img {
                         display: block;
                         object-fit: cover;
