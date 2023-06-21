@@ -169,7 +169,6 @@
     }
 }
 
-
 .music-page-content-best-module {
     padding: 5%;
     padding-top: 0;
@@ -212,8 +211,6 @@
                     right: 0;
                     bottom: 0;
                     cursor: pointer;
-
-
                 }
             }
 
@@ -249,8 +246,6 @@
     bottom: 0;
     background-color: $bg-audiobook;
     padding: 5% 2%;
-
-
 
     .my-player-img-title-song-wrapper {
         display: flex;
@@ -296,7 +291,6 @@
             display: flex;
             justify-content: center;
 
-
             :nth-child(1) {
                 width: 50px;
                 cursor: pointer;
@@ -307,7 +301,6 @@
                 cursor: pointer;
                 display: none;
             }
-
         }
 
         hr {
@@ -318,7 +311,6 @@
             background: linear-gradient(45deg, $second-bg-color, $bg-button-hover );
         }
     }
-
 
     .volume-wrapper {
         width: 20%;
