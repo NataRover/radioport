@@ -32,14 +32,14 @@ body {
 
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
     background-color: transparent;
     // display: none;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: $second-bg-button-hover;
-    border-radius: 10px;
-    border: 1px solid $first-bg-color;
+    border-radius: 5px;
+    // border: 1px solid $first-bg-color;
     background-clip: padding-box;
 }

@@ -222,11 +222,17 @@
             </div>
         </div>
         <div class="my-player-btn-play-pause-hr-wrapper">
-            <div class="my-player-btn-play-pause-wrapper">
-                <img src="public/img/img_audiobook/play-ico.svg" alt="">
-                <img src="public/img/img_music_page/pause.svg" alt="">
+            <div class="my-player-btn-play-pause-hr-wrapper-column">
+                <div class="my-player-btn-play-pause-wrapper">
+                    <img src="public/img/img_audiobook/play-ico.svg" alt="">
+                    <img src="public/img/img_music_page/pause.svg" alt="">
+                </div>
+                <div class="live">
+                    <hr>
+                    <div class="live-logo">LIVE</div>
+                    <hr>
+                </div>
             </div>
-            <hr>
         </div>
         <div class="volume-wrapper">
             <svg width="30px" height="30px" data-testid="muted" viewBox="0 0 30 30"
@@ -244,8 +250,10 @@
                     d="M20.9102 18.5602C21.8802 17.7302 22.5002 16.5202 22.5002 15.1502C22.5002 13.7802 21.8702 12.5702 20.9102 11.7402"
                     stroke="#1c203c" stroke-width="1.5" stroke-miterlimit="10"></path>
             </svg>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
         </div>
-
     </div>
     <script type="module" src="/src/script.ts"></script>
     <script type="module" src="/src/audiobook.ts"></script>

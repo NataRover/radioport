@@ -1665,13 +1665,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(165, 165, 165);
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #0f233a;
   background-clip: padding-box;
 }
