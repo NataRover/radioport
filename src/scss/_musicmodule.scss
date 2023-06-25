@@ -242,7 +242,7 @@
 // PLAYER
 .my-player {
     display: none;
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -251,17 +251,14 @@
     position: fixed;
     bottom: 0;
     background-color: $bg-audiobook;
-<<<<<<< HEAD
     padding: 1% 2%;
 
 
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-    }
+    // @media screen and (max-width: 768px) {
+    //     flex-direction: column;
+    // }
 
-=======
-    padding: 4% 2% 5% 2%;
->>>>>>> 117b9f6627310e36d65b47e7ea55d3ea0072e931
+
 
     .my-player-img-title-song-wrapper {
         display: flex;
@@ -274,14 +271,10 @@
         }
 
         .img-my-player-wrapper {
-<<<<<<< HEAD
             width: 80px;
             height: 80px;
-=======
-            width: 100px;
-            height: 100px;
             display: flex;
->>>>>>> 117b9f6627310e36d65b47e7ea55d3ea0072e931
+
             box-shadow: 0 0 6px 0 rgba(0, 0, 0, .25);
             border-radius: 12px;
 
@@ -327,6 +320,9 @@
             .my-player-btn-play-pause-wrapper {
                 display: flex;
                 justify-content: center;
+                @media screen and (max-width: 768px) {
+                    justify-content: flex-end;
+                 }
 
                 :nth-child(1) {
                     max-width: 50px;
@@ -345,12 +341,11 @@
                 align-items: center;
                 gap: 10px;
                 position: relative;
-<<<<<<< HEAD
                 margin-top: 10px;
-=======
-                margin-top:10px;
->>>>>>> 117b9f6627310e36d65b47e7ea55d3ea0072e931
 
+                @media screen and (max-width: 768px) {
+                   display: none;
+                }
                 :nth-child(1) {
                     width: 100%;
                     margin-top: 5px;
@@ -391,8 +386,8 @@
         gap: 10px;
 
         @media screen and (max-width: 768px) {
-            width: 50%;
-        }
+            display: none;
+         }
 
         .slidecontainer {
             width: 100%;
