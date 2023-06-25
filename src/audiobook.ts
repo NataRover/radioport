@@ -41,10 +41,10 @@ for (
   i < playButtonShow.length, q < buttonPlay.length;
   i++, q++
 ) {
-  playButtonShow[i].addEventListener("mouseover", function () {
+  playButtonShow[i]?.addEventListener("mouseover", function () {
     buttonPlay[q].classList.add("display-block");
   });
-  playButtonShow[i].addEventListener("mouseout", function () {
+  playButtonShow[i]?.addEventListener("mouseout", function () {
     buttonPlay[q].classList.remove("display-block");
   });
 }

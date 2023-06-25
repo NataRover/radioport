@@ -15,7 +15,6 @@
         background: linear-gradient(rgba(16, 193, 137, 0.8), rgb(241, 243, 242));
 
         @media screen and (max-width: 768px) {
-
             flex-direction: column;
         }
 
@@ -78,6 +77,12 @@
                 .play-icon-listen {
                     width: 50px;
                     cursor: pointer;
+                }
+
+                .my-player-btn-pause {
+                    width: 55px;
+                    cursor: pointer;
+                    display: none;
                 }
 
                 .favorite-icon-module {
@@ -236,30 +241,43 @@
 
 // PLAYER
 .my-player {
-    display: flex;
+    display: none;
+    // display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
-    height: 88px;
     box-shadow: 0 -4px 14px rgba(0, 0, 0, .1);
     position: fixed;
     bottom: 0;
     background-color: $bg-audiobook;
-    padding: 5% 2% 6% 2%;
+    padding: 1% 2%;
+
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
 
     .my-player-img-title-song-wrapper {
         display: flex;
         align-items: center;
         gap: 10px;
-        width: 30%;
+        width: 40%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
 
         .img-my-player-wrapper {
             width: 80px;
             height: 80px;
-            display: flex;
             box-shadow: 0 0 6px 0 rgba(0, 0, 0, .25);
             border-radius: 12px;
+
+            @media screen and (max-width: 768px) {
+                // width: 30%;
+            }
 
             img {
                 width: 100%;
@@ -276,16 +294,22 @@
 
             :nth-child(1) {
                 color: $bg-button-hover;
+                display: inline-block;
             }
 
             :nth-child(2) {
                 color: $text-color-audiobook;
+                display: inline-block;
             }
         }
     }
 
     .my-player-btn-play-pause-hr-wrapper {
-        width: 50%;
+        width: 40%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
 
         .my-player-btn-play-pause-hr-wrapper-column {
             display: flex;
@@ -296,7 +320,7 @@
                 justify-content: center;
 
                 :nth-child(1) {
-                    width: 50px;
+                    max-width: 50px;
                     cursor: pointer;
                 }
 
@@ -312,10 +336,11 @@
                 align-items: center;
                 gap: 10px;
                 position: relative;
+                margin-top: 10px;
 
                 :nth-child(1) {
                     width: 100%;
-                    margin-top: 5vh;
+                    margin-top: 5px;
                     padding: 0;
                     height: 1vh;
                     border: none;
@@ -325,7 +350,6 @@
 
                 :nth-child(2) {
                     padding: 3px 10px;
-                    margin-top: 28px;
                     font-size: 10px;
                     background-color: $second-bg-button-hover;
                     color: $text-color;
@@ -334,7 +358,7 @@
 
                 :nth-child(3) {
                     width: 100%;
-                    margin-top: 5vh;
+                    margin-top: 5px;
                     padding: 0;
                     height: 1vh;
                     border: none;
@@ -350,6 +374,10 @@
         width: 20%;
         display: flex;
         gap: 10px;
+
+        @media screen and (max-width: 768px) {
+            width: 50%;
+        }
 
         .slidecontainer {
             width: 100%;
