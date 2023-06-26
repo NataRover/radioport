@@ -40,11 +40,33 @@
                     flex-wrap: wrap;
                     gap: 15px;
 
+                    :nth-child(1) {
+                        color: aqua;
+                    }
+                    :nth-child(2) {
+                        color: rgb(249, 146, 246);
+                    }
+                    :nth-child(3) {
+                        color: rgb(250, 250, 176);
+                    }
+                    :nth-child(4) {
+                        color: rgb(149, 212, 248);
+                    }
+                    :nth-child(5) {
+                        color: rgb(243, 102, 135);
+                    }
+                    :nth-child(6) {
+                        color: rgb(102, 243, 104);
+                    }
+
                     .search-what-lissen-module-title {
                         width: 17vw;
                         height: 10vw;
                         background-color: $first-bg-color;
                         border-radius: 10px;
+                        // color: $bg-audiobook;
+                        text-align: left;
+                        padding: 15px;
                     }
                 }
             }
