@@ -33,6 +33,62 @@
             .search-what-lissen {
                 margin-top: 5vh;
                 margin-bottom: 5vh;
+
+                .search-what-lissen-module {
+                    margin-top: 3vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+
+                    .search-what-lissen-module-title {
+                        width: 17vw;
+                        height: 10vw;
+                        background-color: $first-bg-color;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .search-pop-stations {
+                .pop-stations-module {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    gap: 15px;
+                    margin-top: 3vh;
+                    overflow-x: scroll;
+                    padding: 2% 0;
+
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $first-bg-color;
+
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
+                    }
+
+                    &::-webkit-scrollbar {
+                        height: 3px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+                        background-color: #f9f9fd;
+
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
+                    }
+
+                    .pop-station-title {
+                        min-width: 150px;
+                        height: 150px;
+                        background-color: $title-text-color;
+                        border-radius: 10px;
+                        display: inline-block;
+                    }
+                }
             }
 
             .pop-search {
@@ -58,6 +114,5 @@
                 }
             }
         }
-
     }
 }
