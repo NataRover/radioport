@@ -135,13 +135,14 @@
         flex-direction: column;
         padding: 1% 10%;
         margin-bottom: 2vh;
+        box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
 
         span {
             color: $first-bg-color;
             font-weight: lighter;
         }
 
-        box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
+       
     }
 
     /*основной контент*/
@@ -190,6 +191,8 @@
                         width: 100px;
                         height: 100px;
                         position: relative;
+                        background: $first-bg-color;
+                        border-radius: 10px;
 
                         img {
                             width: 100%;
@@ -201,11 +204,11 @@
                         }
 
                         .ico-pl-test {
-                            width: 40%;
-                            height: 40%;
+                            width: 30%;
+                            height: 30%;
                             display: block;
-                            right: 0;
-                            bottom: 0;
+                            right: 5%;
+                            bottom: 5%;
                             cursor: pointer;
                         }
                     }

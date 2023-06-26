@@ -200,6 +200,8 @@
                 width: 100px;
                 height: 100px;
                 position: relative;
+                background-color: $first-bg-color;
+                border-radius: 10px;
 
                 img {
                     width: 100%;
@@ -211,11 +213,11 @@
                 }
 
                 .ico-pl-test {
-                    width: 40%;
-                    height: 40%;
+                    width: 30%;
+                    height: 30%;
                     display: block;
-                    right: 0;
-                    bottom: 0;
+                    right: 5%;
+                    bottom: 5%;
                     cursor: pointer;
                 }
             }
@@ -294,7 +296,7 @@
 
         .my-player-title-song {
             font-size: 14px;
-         
+
             :nth-child(1) {
                 color: $bg-button-hover;
                 display: inline-block;
@@ -321,9 +323,10 @@
             .my-player-btn-play-pause-wrapper {
                 display: flex;
                 justify-content: center;
+
                 @media screen and (max-width: 768px) {
                     justify-content: flex-end;
-                 }
+                }
 
                 :nth-child(1) {
                     max-width: 50px;
@@ -345,8 +348,9 @@
                 margin-top: 10px;
 
                 @media screen and (max-width: 768px) {
-                   display: none;
+                    display: none;
                 }
+
                 :nth-child(1) {
                     width: 100%;
                     margin-top: 5px;
@@ -388,7 +392,7 @@
 
         @media screen and (max-width: 768px) {
             display: none;
-         }
+        }
 
         .slidecontainer {
             width: 100%;

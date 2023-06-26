@@ -216,7 +216,7 @@
                 overflow: hidden;
                 border-radius: 15px;
                 box-shadow: rgb(28 31 58 / 12%) 0px 3px 4px 1px;
-                background-color: rgb(204, 230, 230);
+                background-color:$first-bg-color;
 
                 @media screen and (max-width: 991px) {
                   height: 30vw;
