@@ -5,6 +5,16 @@
         background-color: $bg-audiobook;
 
         .audiobook-link-menu {
+            .link-menu-ico {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                img {
+                    width: 20px;
+                }
+            }
+
             .activ-page-menu {
                 span {
                     color: $first-bg-color;
@@ -78,6 +88,16 @@
             a {
                 :hover {
                     color: $first-bg-color;
+                }
+            }
+
+            .link-menu-ico {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                img {
+                    width: 20px;
                 }
             }
 

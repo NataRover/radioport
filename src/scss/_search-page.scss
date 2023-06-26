@@ -1,0 +1,63 @@
+@import "variable";
+
+.search-container {
+    .search-content {
+        width: 80%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .search-module {
+            padding: 3% 5%;
+
+            .nosubmit {
+                margin-top: 3vh;
+            }
+
+            input.nosubmit {
+                width: 100%;
+                padding: 1% 1% 1% 6%;
+                border-radius: 30px;
+                background: transparent url("../img/img_search/search.svg") no-repeat 1vw center;
+                background-size: 2vw;
+                background-color: rgba(171, 171, 171, 0.5);
+                color: $first-bg-color;
+                font-size: 1rem;
+            }
+
+            .search-result {
+                margin-top: 5vh;
+            }
+
+            .search-what-lissen {
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+
+            .pop-search {
+                margin-top: 5vh;
+
+                h3 {
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;
+                }
+
+                .pop-title-search {
+                    display: inline-block;
+                    border: 1px solid #cbccd2;
+                    border-radius: 54px;
+                    overflow: hidden;
+                    padding: 9px 21px;
+                    color: #333;
+
+                    &:hover {
+                        background-color: #cbccd2;
+                        transition: background-color 0.5s, border-color 0.5s;
+                    }
+                }
+            }
+        }
+
+    }
+}

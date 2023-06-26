@@ -5,13 +5,22 @@
     background-color: $bg-audiobook;
 
     .audiobook-link-menu {
+      .link-menu-ico {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        img {
+          width: 20px;
+        }
+      }
+
       .activ-page-menu {
         span {
           color: $first-bg-color;
           font-weight: bold;
         }
       }
-
 
       .audiobook-link-menu,
       .audiobook-regisr-module {
@@ -82,6 +91,15 @@
         }
       }
 
+      .link-menu-ico {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        img {
+          width: 20px;
+        }
+      }
 
       .activ-page-menu {
         span {
