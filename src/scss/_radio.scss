@@ -1,0 +1,11 @@
+.contant-page-radio-map {
+    width: 80%;
+    height: 100vh;
+    padding: 3% 5%;
+    background-color: $title-text-color;
+    color: $text-color;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+}
