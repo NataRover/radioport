@@ -95,6 +95,7 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".box").forEach((box) => observer.observe(box));
 
+
 // КНОПКА PLAY
 //на основном контенте
 let playShow = document.querySelectorAll(".wrapper-play-radio");

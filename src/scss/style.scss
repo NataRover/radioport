@@ -27,10 +27,11 @@
 
 body {
     overflow: overlay !important;
-  
+
     @media screen and (max-width:460px) {
-       background-color: $first-bg-color;
+        background-color: $first-bg-color;
     }
+
 }
 
 
@@ -45,4 +46,187 @@ body {
     border-radius: 5px;
     // border: 1px solid $first-bg-color;
     background-clip: padding-box;
+}
+
+
+// PLAYER
+.my-player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    box-shadow: 0 -4px 14px rgba(0, 0, 0, .1);
+    position: fixed;
+    bottom: 0;
+    background-color: $bg-audiobook;
+    padding: 1% 2%;
+
+    // @media screen and (max-width: 768px) {
+    //     flex-direction: column;
+    // }
+  
+
+    .my-player-img-title-song-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 40%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .img-my-player-wrapper {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .25);
+            border-radius: 12px;
+
+            @media screen and (max-width: 768px) {
+                // width: 30%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                border-radius: 12px;
+            }
+        }
+
+        .my-player-title-song {
+            font-size: 14px;
+
+            :nth-child(1) {
+                color: $bg-button-hover;
+                display: inline-block;
+            }
+
+            :nth-child(2) {
+                color: $text-color-audiobook;
+                display: inline-block;
+            }
+        }
+    }
+
+    .my-player-btn-play-pause-hr-wrapper {
+        width: 40%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .my-player-btn-play-pause-hr-wrapper-column {
+            display: flex;
+            flex-direction: column;
+
+            .my-player-btn-play-pause-wrapper {
+                display: flex;
+                justify-content: center;
+
+                @media screen and (max-width: 768px) {
+                    justify-content: flex-end;
+                }
+
+                :nth-child(1) {
+                    max-width: 50px;
+                    cursor: pointer;
+                }
+
+                :nth-child(2) {
+                    width: 55px;
+                    cursor: pointer;
+                    display: none;
+                }
+            }
+
+            .live {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                margin-top: 10px;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+
+                :nth-child(1) {
+                    width: 100%;
+                    margin-top: 5px;
+                    padding: 0;
+                    height: 5px;
+                    border: none;
+                    background: linear-gradient(45deg, $bg-button-hover, $second-bg-color);
+                    border-radius: 10px;
+                    margin-top: -1px;
+                }
+
+                :nth-child(2) {
+                    padding: 3px 10px;
+                    font-size: 10px;
+                    background-color: $second-text-color;
+                    color: $text-color;
+                    border-radius: 10px;
+                }
+
+                :nth-child(3) {
+                    width: 100%;
+                    margin-top: 5px;
+                    padding: 0;
+                    height: 5px;
+                    border: none;
+                    background: linear-gradient(45deg, $second-bg-color, $bg-button-hover);
+                    border-radius: 10px;
+                    margin-top: -1px;
+                }
+            }
+        }
+    }
+
+    .volume-wrapper {
+        width: 20%;
+        display: flex;
+        gap: 10px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        .slidecontainer {
+            width: 100%;
+
+            .slider {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 80%;
+                height: 3px;
+                background: $text-color-audiobook;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: $first-bg-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.d-none {
+    display: none;
 }

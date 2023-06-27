@@ -48,3 +48,4 @@ for (
     buttonPlay[q].classList.remove("display-block");
   });
 }
+ 
