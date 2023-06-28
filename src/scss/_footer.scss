@@ -3,6 +3,7 @@
 .footer {
     background-color: $first-bg-color;
     padding: 3% 5%;
+    padding-bottom: 150px;
 
     .futer-modul-logo {
         color: $text-color;
@@ -19,11 +20,11 @@
             color: $second-bg-color;
             font-size: 3.5rem;
             padding-bottom: 1vh;
-        
+
             .logo-down,
             .logo-up {
                 font-size: 2.5rem;
-                
+
             }
         }
     }

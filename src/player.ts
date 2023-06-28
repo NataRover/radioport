@@ -2,8 +2,9 @@ import "./css/style.css";
 import "./scss/style.scss";
 
 let btnPlay = document.querySelectorAll(".play-music-for-music-module");
-let myPlayer = document.getElementsByClassName("my-player");
+let myPlayer = document.querySelector(".my-player");
 const player = document.createElement("div");
+// player.style.display = "none";
 const body = document.getElementsByTagName("body");
 body[0].appendChild(player);
 
@@ -14,7 +15,7 @@ body[0].appendChild(player);
 // player.appendChild(pl)
 // formiruem player chrerez takie ze elements
 
-player.innerHTML += `<div class="my-player d-none">
+player.innerHTML += `<div class="my-player">
 <div class="my-player-img-title-song-wrapper">
     <div class="img-my-player-wrapper">
         <img src="public/img/img_content/img_8.webp" alt="">
@@ -64,7 +65,11 @@ btnPlay.forEach(function (el) {
   /* Назначаем обработчик кнопкам */
   el.addEventListener("click", function () {
     console.log("click");
-    myPlayer.classList.remove("d-none");
+    if (player.style.display === "none") {
+      player.style.display = "flex";
+    }
+    else{
+        player.style.display ="none" 
+    }
   });
 });
- 

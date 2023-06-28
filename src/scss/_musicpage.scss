@@ -67,6 +67,7 @@
         top: 1%;
         left: 0;
         bottom: 5%;
+        padding-bottom: 100px;
 
         @media screen and (max-width: 991px) {
             display: none;
@@ -237,6 +238,7 @@
             color: $first-bg-color;
             margin-top: 5%;
             padding: 3%;
+            padding-bottom: 150px;
         }
     }
 }
