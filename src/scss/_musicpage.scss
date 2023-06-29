@@ -67,7 +67,7 @@
         top: 1%;
         left: 0;
         bottom: 5%;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
 
         @media screen and (max-width: 991px) {
             display: none;
@@ -135,7 +135,7 @@
         display: flex;
         flex-direction: column;
         padding: 1% 10%;
-        margin-bottom: 2vh;
+        padding-bottom: 2vh;
         box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
 
         span {
@@ -238,7 +238,7 @@
             color: $first-bg-color;
             margin-top: 5%;
             padding: 3%;
-            padding-bottom: 150px;
+            // padding-bottom: 150px;
         }
     }
 }

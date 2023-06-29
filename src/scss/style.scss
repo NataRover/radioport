@@ -10,8 +10,6 @@
 @import"search-page";
 @import"radio";
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -31,9 +29,7 @@ body {
     @media screen and (max-width:460px) {
         background-color: $first-bg-color;
     }
-
 }
-
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -47,7 +43,6 @@ body {
     // border: 1px solid $first-bg-color;
     background-clip: padding-box;
 }
-
 
 // PLAYER
 .my-player {
@@ -65,7 +60,6 @@ body {
     // @media screen and (max-width: 768px) {
     //     flex-direction: column;
     // }
-
 
     .my-player-img-title-song-wrapper {
         display: flex;
