@@ -65,13 +65,13 @@ body {
     // @media screen and (max-width: 768px) {
     //     flex-direction: column;
     // }
-  
+
 
     .my-player-img-title-song-wrapper {
         display: flex;
         align-items: center;
         gap: 10px;
-        width: 40%;
+        width: 20%;
 
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -227,6 +227,7 @@ body {
         }
     }
 }
+
 .d-none {
     display: none;
 }
