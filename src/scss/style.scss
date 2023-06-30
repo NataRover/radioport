@@ -133,7 +133,7 @@ body {
                 :nth-child(2) {
                     width: 55px;
                     cursor: pointer;
-                    display: none;
+                    // display: none;
                 }
             }
 
@@ -188,6 +188,10 @@ body {
 
         @media screen and (max-width: 768px) {
             display: none;
+        }
+
+        .volume {
+            width: 30px;
         }
 
         .slidecontainer {

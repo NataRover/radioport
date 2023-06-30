@@ -4,16 +4,16 @@ import "./scss/style.scss";
 //КАРУСЕЛЬ
 const gap = 14;
 
-let carousel = document.getElementById("carousel");
-let content = document.getElementById("content");
-let next = document.querySelector(".btn-carousel-next");
-let prev = document.querySelector(".btn-carousel-prev");
+let carousel = document.getElementById("carousel") as any;
+let content = document.getElementById("content") as any;
+let next = document.querySelector(".btn-carousel-next") as any;
+let prev = document.querySelector(".btn-carousel-prev") as any;
 
 let width = carousel?.offsetWidth;
 window.addEventListener("resize", () => (width = carousel?.offsetWidth));
 
 next?.addEventListener("click", () => {
-  carousel?.scrollBy((width) + gap, 0);
+  carousel?.scrollBy(width + gap, 0);
   if (carousel?.scrollWidth !== 0) {
     prev.style.display = "flex";
   }
@@ -22,11 +22,14 @@ next?.addEventListener("click", () => {
   }
 });
 prev?.addEventListener("click", () => {
-  carousel?.scrollBy(-((width) + gap), 0);
+  carousel?.scrollBy(-(width + gap), 0);
   if (carousel.scrollLeft - width - gap <= 0) {
     prev.style.display = "none";
   }
-  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+  if (
+    (!content.scrollWidth as any) - width - gap <=
+    carousel.scrollLeft + width
+  ) {
     next.style.display = "flex";
   }
 });
@@ -48,4 +51,3 @@ for (
     buttonPlay[q].classList.remove("display-block");
   });
 }
- 

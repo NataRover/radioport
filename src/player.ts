@@ -1,9 +1,8 @@
 import "./css/style.css";
 import "./scss/style.scss";
 
-let btnPlay = document.querySelectorAll(".play-music-for-music-module");
-const player = document.createElement("div");
-// player.style.display = "none";
+let btnPlay = document.querySelectorAll(".play-music-for-music-module"); //все кнорки play
+const player = document.createElement("div"); //div плеера
 const body = document.getElementsByTagName("body");
 
 // const pl = document.createElement('div')
@@ -28,7 +27,7 @@ player.innerHTML += `
         <div class="my-player-btn-play-pause-hr-wrapper-column">
             <div class="my-player-btn-play-pause-wrapper">
                 <img src="public/img/img_music_page/play-ico.svg" alt="" class="my-player-btn-play">
-                <img src="public/img/img_music_page/pause.svg" alt="" class="my-player-btn-pause">
+                <img src="public/img/img_music_page/pause.svg" alt="" class="my-player-btn-pause d-none">
             </div>
             <div class="live">
                 <hr>
@@ -38,46 +37,46 @@ player.innerHTML += `
         </div>
     </div>
     <div class="volume-wrapper">
-        <svg width="30px" height="30px" data-testid="muted" viewBox="0 0 30 30"
-        class="volume-control-module__overflowVisible___R7sn0" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.61977 10.4286H3V19.5714H7.61977V10.4286Z" stroke="#1c203c" stroke-width="1.5"></path>
-            <path d="M14.5498 23H12.2399L7.62012 19.5714V10.4286L12.2399 7H14.5498V23Z" stroke="#1c203c"
-            stroke-width="1.5"></path>
-            <path
-            d="M20.9102 11.7402C21.8802 12.5702 22.5002 13.7802 22.5002 15.1502C22.5002 16.5202 21.8702 17.7302 20.9102 18.5602"
-            stroke="#1c203c" stroke-width="1.5" stroke-miterlimit="10"></path>
-            <path
-            d="M24.1006 21.7498C25.8806 20.1098 27.0006 17.7598 27.0006 15.1498C27.0006 12.5398 25.8806 10.1898 24.1006 8.5498"
-            stroke="#1c203c" stroke-width="1.5" stroke-miterlimit="10"></path>
-            <path
-            d="M20.9102 18.5602C21.8802 17.7302 22.5002 16.5202 22.5002 15.1502C22.5002 13.7802 21.8702 12.5702 20.9102 11.7402"
-            stroke="#1c203c" stroke-width="1.5" stroke-miterlimit="10"></path>
-        </svg>
+    <img src="img/img_music_page/volume.svg" alt="" class="volume">    
         <div class="slidecontainer">
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </div>
     </div>
 </div> `;
-
+//добавили плеер на каждую страницу
 body[0].appendChild(player);
-let myPlayer = document.querySelector(".my-player") as any
+//сам плеер
+let myPlayer = document.querySelector(".my-player") as any;
 
 if (localStorage.player) {
-    myPlayer.style.display = "flex";
+  myPlayer.style.display = "flex";
 }
+//play на плеере
+let btnPlayModule = document.querySelector(".my-player-btn-play") as any;
+console.log(btnPlayModule);
+//pause на плеере
+let btnPauseModule = document.querySelector(".my-player-btn-pause ") as any;
+console.log(btnPauseModule);
 
 /* Перебираем кнопки play*/
 btnPlay.forEach(function (el) {
-    /* Назначаем обработчик кнопкам */
-    el.addEventListener("click", function () {
-        console.log("click");
-        if (myPlayer?.style.display === "none") {
-            myPlayer.style.display = "flex";
-            localStorage.player = true
-        }
-        else {
-            myPlayer.style.display = "none"
-            localStorage.player = false
-        }
-    });
+  /* Назначаем обработчик кнопкам */
+  el.addEventListener("click", function () {
+    console.log("click");
+  
+    if (myPlayer?.style.display === "none") {
+      myPlayer.style.display = "flex";
+      btnPlayModule.classList.add("d-none");
+      btnPauseModule.classList.remove("d-none");
+      localStorage.player = true;
+      
+   
+    } else {
+      myPlayer.style.display = "none";
+      btnPlayModule.classList.remove("d-none");
+      btnPauseModule.classList.add("d-none");
+      localStorage.player = false;
+     
+    }
+  });
 });
