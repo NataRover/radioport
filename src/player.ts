@@ -5,13 +5,6 @@ let btnPlay = document.querySelectorAll(".play-music-for-music-module"); //вс�
 const player = document.createElement("div"); //div плеера
 const body = document.getElementsByTagName("body");
 
-// const pl = document.createElement('div')
-// pl.innerHTML = `sdffsfsdfsdfsdfsdfasdfasdasdasdas
-// sdfsdfsdfs`
-// player.appendChild(pl)
-// player.appendChild(pl)
-// formiruem player chrerez takie ze elements
-
 player.innerHTML += `
 <div class="my-player" style="display:none">
     <div class="my-player-img-title-song-wrapper">
@@ -66,17 +59,11 @@ btnPlay.forEach(function (el) {
   
     if (myPlayer?.style.display === "none") {
       myPlayer.style.display = "flex";
-      btnPlayModule.classList.add("d-none");
-      btnPauseModule.classList.remove("d-none");
       localStorage.player = true;
-      
-   
+       
     } else {
       myPlayer.style.display = "none";
-      btnPlayModule.classList.remove("d-none");
-      btnPauseModule.classList.add("d-none");
-      localStorage.player = false;
-     
+      localStorage.player = false; 
     }
   });
 });

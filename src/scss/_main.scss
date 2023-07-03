@@ -1,0 +1,165 @@
+@import "variable";
+
+.main-container {
+    padding: 3% 5%;
+
+    h2 {
+        margin-bottom: 3vh;
+    }
+
+    h3 {
+        margin-top: 7vh;
+        margin-bottom: 3vh;
+    }
+
+    .main-content {
+        width: 80%;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        // карусель
+        .gallery-module-carousel {
+            position: relative;
+            // margin-top: 5vw;
+
+            /*кнопки перемотки*/
+            .btn-carousel-prev,
+            .btn-carousel-next {
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                @include flex-center;
+                border-radius: 50%;
+                transform: translate(0, -50%);
+                background: $bg-audiobook;
+                cursor: pointer;
+            }
+
+            .btn-carousel-prev {
+                left: -1%;
+                display: none;
+            }
+
+            .btn-carousel-next {
+                right: -1%;
+            }
+
+            #carousel {
+                overflow: auto;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                overflow-y: hidden;
+
+                &::-webkit-scrollbar {
+                    height: 0;
+                }
+
+                #content {
+                    display: flex;
+                    gap: 2%;
+
+                    .carousel-guide-item {
+                        cursor: pointer;
+
+                        .wrapper-book-file-img-play {
+                            display: block;
+                            position: relative;
+                            height: 8vw;
+                            width: 8vw;
+                            overflow: hidden;
+                            border-radius: 15px;
+                            box-shadow: rgb(28 31 58 / 12%) 0px 3px 4px 1px;
+                            background-color: $title-text-color;
+
+                            @media screen and (max-width: 991px) {
+                                height: 20vw;
+                                width: 20vw;
+                            }
+
+                            .img-post-books {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                display: block;
+                            }
+
+                            .ico-pl-test {
+                                position: absolute;
+                                bottom: 5%;
+                                right: 5%;
+                                width: 40px;
+                                z-index: 1;
+                            }
+
+                            /*play-button-show*/
+                            .display-none {
+                                display: none;
+                            }
+
+                            .display-block {
+                                display: block;
+                            }
+                        }
+
+                        .carousel-guide-title {
+                            margin-top: 1vw;
+                            color: $bg-button-hover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search-pop-stations {
+            .pop-stations-module {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 15px;
+                margin-top: 3vh;
+                overflow-x: scroll;
+                padding: 2% 0;
+
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $first-bg-color;
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    height: 3px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+                    background-color: #f9f9fd;
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+
+                .pop-station-title {
+                    min-width: 150px;
+                    height: 150px;
+                    background-color: $first-bg-color;
+                    border-radius: 10px;
+                    display: inline-block;
+                    box-shadow: 0 -4px 14px rgb(0 0 0 / 10%);
+                }
+            }
+        }
+
+        footer {
+            color: $first-bg-color;
+            margin-top: 5%;
+            padding: 3%;
+            // padding-bottom: 150px;
+        }
+    }
+}
