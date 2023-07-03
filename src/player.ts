@@ -1,7 +1,7 @@
 import "./css/style.css";
 import "./scss/style.scss";
 
-let btnPlay = document.querySelectorAll(".play-music-for-music-module"); //все кнорки play
+const btnPlay = document.querySelectorAll(".play-music-for-music-module"); //все кнорки play
 const player = document.createElement("div"); //div плеера
 const body = document.getElementsByTagName("body");
 
@@ -45,25 +45,32 @@ if (localStorage.player) {
   myPlayer.style.display = "flex";
 }
 //play на плеере
-let btnPlayModule = document.querySelector(".my-player-btn-play") as any;
-console.log(btnPlayModule);
+const btnPlayModule = document.querySelector(".my-player-btn-play");
+
 //pause на плеере
-let btnPauseModule = document.querySelector(".my-player-btn-pause ") as any;
-console.log(btnPauseModule);
+const btnPauseModule = document.querySelector(".my-player-btn-pause ") as any;
+
+
+btnPlayModule?.addEventListener("click", function () {
+  console.log("click");
+  if (btnPlayModule) {
+    btnPauseModule.classList.remove("d-none");
+    btnPlayModule.classList.add("d-none");
+  }
+});
 
 /* Перебираем кнопки play*/
 btnPlay.forEach(function (el) {
   /* Назначаем обработчик кнопкам */
   el.addEventListener("click", function () {
     console.log("click");
-  
+
     if (myPlayer?.style.display === "none") {
       myPlayer.style.display = "flex";
       localStorage.player = true;
-       
     } else {
       myPlayer.style.display = "none";
-      localStorage.player = false; 
+      localStorage.player = false;
     }
   });
 });
