@@ -20,7 +20,6 @@ player.innerHTML += `
         <div class="my-player-btn-play-pause-hr-wrapper-column">
             <div class="my-player-btn-play-pause-wrapper">
                 <img src="public/img/img_music_page/play-ico.svg" alt="" class="my-player-btn-play">
-                <img src="public/img/img_music_page/pause.svg" alt="" class="my-player-btn-pause d-none">
             </div>
             <div class="live">
                 <hr>
@@ -36,6 +35,7 @@ player.innerHTML += `
         </div>
     </div>
 </div> `;
+
 //добавили плеер на каждую страницу
 body[0].appendChild(player);
 //сам плеер
@@ -44,20 +44,34 @@ let myPlayer = document.querySelector(".my-player") as any;
 if (localStorage.player) {
   myPlayer.style.display = "flex";
 }
-//play на плеере
-const btnPlayModule = document.querySelector(".my-player-btn-play");
+//кнопка play на плеере
+const btnPlayPlayer = document.querySelector(".my-player-btn-play");
+const music = new Audio("gl.mp3");
+const playing = false;
 
-//pause на плеере
-const btnPauseModule = document.querySelector(".my-player-btn-pause ") as any;
+btnPlayPlayer?.addEventListener("click", playTrack);
 
-
-btnPlayModule?.addEventListener("click", function () {
-  console.log("click");
-  if (btnPlayModule) {
-    btnPauseModule.classList.remove("d-none");
-    btnPlayModule.classList.add("d-none");
+function playTrack() {
+  if (playing) {
+    music.pause();
+    btnPlayPlayer.src = "public/img/img_music_page/play-ico.svg";
+  } else {
+    music.play();
+    btnPlayPlayer.src = "public/img/img_music_page/pause.svg";
   }
-});
+  playing = !playing;
+}
+// btnPlayModule?.addEventListener("click", function () {
+//   console.log("click");
+//   if (btnPlayModule==) {
+//     btnPlayModule.classList.add("d-none");
+//     btnPauseModule?.classList.remove("d-none");
+//   }
+//   else{
+
+//     btnPauseModule?.classList.add("d-none");
+//   }
+// });
 
 /* Перебираем кнопки play*/
 btnPlay.forEach(function (el) {
