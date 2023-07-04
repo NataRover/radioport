@@ -47,7 +47,7 @@ if (localStorage.player) {
 //кнопка play на плеере
 const btnPlayPlayer = document.querySelector(".my-player-btn-play");
 const music = new Audio("gl.mp3");
-const playing = false;
+let playing = false;
 
 btnPlayPlayer?.addEventListener("click", playTrack);
 
@@ -61,17 +61,6 @@ function playTrack() {
   }
   playing = !playing;
 }
-// btnPlayModule?.addEventListener("click", function () {
-//   console.log("click");
-//   if (btnPlayModule==) {
-//     btnPlayModule.classList.add("d-none");
-//     btnPauseModule?.classList.remove("d-none");
-//   }
-//   else{
-
-//     btnPauseModule?.classList.add("d-none");
-//   }
-// });
 
 /* Перебираем кнопки play*/
 btnPlay.forEach(function (el) {
