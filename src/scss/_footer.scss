@@ -3,7 +3,11 @@
 .footer {
     background-color: $first-bg-color;
     padding: 3% 5%;
-    // padding-bottom: 150px;
+    padding-bottom: 150px;
+
+    .footer-navigation {
+        padding-bottom: 100px;
+    }
 
     .futer-modul-logo {
         color: $text-color;
