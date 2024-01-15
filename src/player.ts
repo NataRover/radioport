@@ -31,7 +31,7 @@ player.innerHTML += `
     <div class="volume-wrapper">
     <img src="img/img_music_page/volume.svg" alt="" class="volume">    
         <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <input type="range" min="1" max="100" value="10" class="slider" id="volumecontroller">
         </div>
     </div>
 </div> `;
@@ -63,6 +63,11 @@ function playTrack() {
 }
 
 // регулировка громкости
+
+const volumeController = document.getElementById("volumecontroller");
+volumeController.addEventListener("input", () => {
+  HTMLMediaElement.volume = volumeController.value / 100;
+});
 
 
 /* Перебираем кнопки play*/
