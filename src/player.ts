@@ -62,6 +62,9 @@ function playTrack() {
   playing = !playing;
 }
 
+// регулировка громкости
+
+
 /* Перебираем кнопки play*/
 btnPlay.forEach(function (el) {
   /* Назначаем обработчик кнопкам */
