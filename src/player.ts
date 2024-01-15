@@ -6,6 +6,7 @@ const player = document.createElement("div"); //div плеера
 const body = document.getElementsByTagName("body");
 
 player.innerHTML += `
+
 <div class="my-player" style="display:none">
     <div class="my-player-img-title-song-wrapper">
         <div class="img-my-player-wrapper">
@@ -32,15 +33,17 @@ player.innerHTML += `
     <img src="img/img_music_page/volume.svg" alt="" class="volume">    
         <div class="slidecontainer">
             <input type="range" min="1" max="100" value="10" class="slider" id="volumecontroller">
+            
         </div>
     </div>
-</div> `;
+</div>
+ `;
 
 //добавили плеер на каждую страницу
 body[0].appendChild(player);
+
 //сам плеер
 let myPlayer = document.querySelector(".my-player") as any;
-
 if (localStorage.player) {
   myPlayer.style.display = "flex";
 }
@@ -64,11 +67,10 @@ function playTrack() {
 
 // регулировка громкости
 
-const volumeController = document.getElementById("volumecontroller");
-volumeController.addEventListener("input", () => {
-  HTMLMediaElement.volume = volumeController.value / 100;
+let volume = document.querySelector("#volumecontroller");
+volume.addEventListener("change", function (e) {
+  music.volume = e.currentTarget.value / 100;
 });
-
 
 /* Перебираем кнопки play*/
 btnPlay.forEach(function (el) {
